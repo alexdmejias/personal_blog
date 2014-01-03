@@ -2,10 +2,12 @@
 <?php snippet('menu') ?>
 <?php snippet('submenu') ?>
 
-<section class="content">
+<section class="content wrap-narrow clearfix">
 
   <article>
-    <h1><?php echo html($page->title()) ?></h1>
+    <header class="article-header">
+    	<h1 class="h2 special"><a href="#"><?php echo html($page->title()) ?></a></h1>
+    </header>
     <?php echo kirbytext($page->text()) ?>
   </article>
 

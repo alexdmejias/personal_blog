@@ -1,7 +1,15 @@
-  <footer>
-    <?php echo kirbytext($site->copyright()) ?>
-  </footer>
+			<footer class="footer wrap-narrow cleapfix" role="contentinfo">
 
-</body>
+				<div id="inner-footer" class="one-main clearfix">
+
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Alex Mejias.</p>
+
+				</div> <?php // end #inner-footer ?>
+
+			</footer> <?php // end footer ?>
+
+		</div> <?php // end #container ?>
+
+	</body>
 
 </html>
