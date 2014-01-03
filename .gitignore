@@ -2,3 +2,6 @@
 panel/
 site/panel
 docs
+
+server_creds.json
+site/config/config.php
