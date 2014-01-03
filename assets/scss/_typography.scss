@@ -1,0 +1,51 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: $sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+a, a:visited {
+	color: $secondary-color;
+	text-decoration: none;
+}
+/* on hover */
+a:hover {
+	color: $grey-light;
+	border-bottom: 2px dashed $grey-light;
+}
+
+.prominent {
+	font-family: $sans-serif;
+}
+
+.special {
+	font-family: $special;
+	font-style: italic;
+}

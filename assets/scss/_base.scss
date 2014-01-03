@@ -1,0 +1,27 @@
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #565656;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.header {
+	width: 100%;
+	background: $grey-dark;
+	position: fixed;
+	height: 45px;
+}
+
+
+.content {
+	padding: 45px 0 0;
+}
+

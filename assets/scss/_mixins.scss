@@ -1,0 +1,47 @@
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$special:			$serif;
+
+$white: #fff;
+$black: #000;
+
+$grey-light: #999;
+$grey-medium: #666;
+$grey-dark: #222;
+
+$primary-color: yellow;
+$secondary-color: #B00000;
+$tertiary-color: red;
+
+
+/*********************
+TOOLS
+*********************/
+
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+.wrap-wide {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.wrap {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wrap-narrow {
+	width: 60%;
+	margin: 0 auto;
+}
