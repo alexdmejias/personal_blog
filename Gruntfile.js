@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	var paths = {
-		libraryDir: 'library'
+		libraryDir: 'assets/'
 	};
 
 
@@ -20,15 +20,15 @@ module.exports = function(grunt) {
 
 			livereload: {
 				options: { livereload: true },
-				files: ['<%= paths.libraryDir %>/css/style.css', '<%= paths.appDir %>/**/*.php']
+				files: ['<%= paths.libraryDir %>/styles/styles.css', '<%= paths.appDir %>/**/*.php']
 			}
 		},
 
-		compass: {
+		sass: {
 			dist: {
 				options: {
 					force: true,
-					cssDir: '<%= paths.libraryDir %>/css/',
+					cssDir: '<%= paths.libraryDir %>/styles/',
 					sassDir: '<%= paths.libraryDir %>/scss/'
 				}
 			}
@@ -44,7 +44,13 @@ module.exports = function(grunt) {
             },
             staging: {
                 options: {
-                    dest: "/var/www/labs.alexdmejias.com/pocket/",
+                    dest: "<%= creds.path.staging %>",
+                    host: "<%= creds.user %>@<%= creds.ip %>"
+                }
+            },
+            staging: {
+                options: {
+                    dest: "<%= creds.path.prod %>",
                     host: "<%= creds.user %>@<%= creds.ip %>"
                 }
             }
