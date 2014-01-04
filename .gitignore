@@ -3,5 +3,7 @@ panel/
 site/panel
 docs
 
+node_modules/
+.sass-cache/
 server_creds.json
 site/config/config.php
