@@ -24,7 +24,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=IM+Fell+English:400italic,400' rel='stylesheet' type='text/css'>
 
-	<?php echo css('assets/styles/styles.css') ?>
+	<?php echo css('assets/css/styles.css') ?>
 
 </head>
 

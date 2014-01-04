@@ -9,27 +9,40 @@ module.exports = function(grunt) {
 
 
 	grunt.initConfig({
-		creds: grunt.file.readJSON('../server_creds.json'),
+		creds: grunt.file.readJSON('server_creds.json'),
 		paths: paths,
 
 		watch: {
-			compass: {
-				files: ['<%= paths.libraryDir %>/scss/**/*.scss'],
-				tasks: ['compass']
+			options: {
+				livereload: true
 			},
 
-			livereload: {
-				options: { livereload: true },
-				files: ['<%= paths.libraryDir %>/styles/styles.css', '<%= paths.appDir %>/**/*.php']
+			sass: {
+				options: {
+					livereload: false
+				},
+				files: ['<%= paths.libraryDir %>/scss/**/*.scss'],
+				tasks: ['sass']
+			},
+
+			css: {
+				files: ['<%= paths.libraryDir %>/css/style.css'],
+			},
+
+			php: {
+				files: ['site/**/*.php']
+			},
+
+			js: {
+				files: ['<%= paths.libraryDir %>/js/**/*.js', '!<%= paths.libraryDir %>/js/scripts.concat.js'],
+				tasks: ['concat']
 			}
 		},
 
 		sass: {
 			dist: {
-				options: {
-					force: true,
-					cssDir: '<%= paths.libraryDir %>/styles/',
-					sassDir: '<%= paths.libraryDir %>/scss/'
+				files: {
+					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
 				}
 			}
 		},
@@ -38,7 +51,7 @@ module.exports = function(grunt) {
             options: {
                 src: "../",
                 args: ["--verbose"],
-                exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc'],
+                exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md'],
                 recursive: true,
                 syncDestIgnoreExcl: true
             },
@@ -48,7 +61,7 @@ module.exports = function(grunt) {
                     host: "<%= creds.user %>@<%= creds.ip %>"
                 }
             },
-            staging: {
+            prod: {
                 options: {
                     dest: "<%= creds.path.prod %>",
                     host: "<%= creds.user %>@<%= creds.ip %>"
