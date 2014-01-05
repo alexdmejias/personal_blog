@@ -5,4 +5,5 @@ Text: To have custom config files in laravel all you have to do is create your c
 I should also note that custom config files also work in different enviroments.
 ----
 Tags: Laravel, L4, tip
-
+----
+Template: tip
