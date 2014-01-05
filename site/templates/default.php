@@ -1,15 +1,12 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
-<?php snippet('submenu') ?>
+<?php $body_snippets_path = $_SERVER['DOCUMENT_ROOT']. '/site/snippets/body/'; ?>
 
 <section class="content wrap-narrow clearfix">
-
-  <article>
-    <header class="article-header">
-    	<h1 class="h2 special"><a href="#"><?php echo html($page->title()) ?></a></h1>
-    </header>
-    <?php echo kirbytext($page->text()) ?>
-  </article>
+	<?php if(isset($page->template->value) && (file_exists($body_snippets_path . '/tip.php'))): ?>
+		<?php snippet(strtolower('body/'.$page->template->value)); ?>
+	<?php else: ?>
+		<?php snippet(strtolower('body/default')); ?>
+	<?php endif; ?>
 
 </section>
 
