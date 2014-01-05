@@ -49,3 +49,14 @@ a:hover {
 	font-family: $special;
 	font-style: italic;
 }
+
+.title {
+	color: $grey-medium;
+	float: left;
+}
+
+code {
+	background: $grey-light;
+	color: $black;
+	padding: 0 6px;
+}

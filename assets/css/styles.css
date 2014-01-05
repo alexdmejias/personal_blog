@@ -506,6 +506,9 @@ LAYOUT & GRID STYLES
 .content {
   padding: 45px 0 0; }
 
+nav li {
+  float: left; }
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
@@ -548,6 +551,15 @@ a:hover {
 .special {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-style: italic; }
+
+.title {
+  color: #666666;
+  float: left; }
+
+code {
+  background: #999999;
+  color: black;
+  padding: 0 6px; }
 
 @media only screen and (min-width: 768px) {
   .onecol {
