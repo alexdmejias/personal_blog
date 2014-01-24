@@ -1,9 +1,7 @@
-Title: Kirby
+Title: Alex Mejias
 ----
-Author: Bastian Allgeier
+Author: Alex Mejias
 ----
-Description: Kirby is awesome
+Description: Random thoughts
 ----
-Keywords: kirby, cms, kirbycms, php, filesystem
-----
-Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier)
+Keywords: webdev, frontend, front-end, awesome, php
