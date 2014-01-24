@@ -3,4 +3,5 @@ Title: Custom Config Files in Laravel (using Artisan)
 Text: If you would like to use custom config files and Artisan (ie: for migrations), you need to append the `--end=ENV` flag at the end of your command
 ----
 Tags: Laravel, L4, tip
-
+----
+Template: tip
