@@ -1,0 +1,7 @@
+v1
+- switch to libsass for faster compiling times
+- sticky footer
+
+
+v2
+- better caching
