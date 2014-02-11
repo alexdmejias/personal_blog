@@ -22,11 +22,11 @@ module.exports = function(grunt) {
 					livereload: false
 				},
 				files: ['<%= paths.libraryDir %>/scss/**/*.scss'],
-				tasks: ['sass']
+				tasks: ['sass', 'autoprefixer']
 			},
 
 			css: {
-				files: ['<%= paths.libraryDir %>/css/style.css'],
+				files: ['<%= paths.libraryDir %>/css/styles.css'],
 			},
 
 			php: {
@@ -36,6 +36,13 @@ module.exports = function(grunt) {
 			js: {
 				files: ['<%= paths.libraryDir %>/js/**/*.js', '!<%= paths.libraryDir %>/js/scripts.concat.js'],
 				tasks: ['concat']
+			}
+		},
+
+		autoprefixer: {
+			dist: {
+				src: '<%= paths.libraryDir %>/css/styles.css',
+				dest: '<%= paths.libraryDir %>/css/styles.css'
 			}
 		},
 
