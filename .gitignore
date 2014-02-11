@@ -2,7 +2,8 @@
 panel/
 site/panel
 docs
-
+kirby/
+private/
 node_modules/
 .sass-cache/
 server_creds.json
