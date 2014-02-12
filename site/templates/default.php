@@ -14,12 +14,17 @@
 
 	?>
 	<nav>
-		<?php if($page->hasPrev()): ?>
-			<a href="<?= $page->prev()->url() ?>">&laquo; Prev: <?= $page->prev()->title(); ?></a>
-		<?php endif; ?>
-		<?php if($page->hasNext()): ?>
-			<a href="<?= $page->next()->url() ?>">Next: <?= $page->next()->title() ?> &raquo; </a>
-		<?php endif; ?>
+		<?php
+			if ($page->parent()) {
+				if ($page->hasPrev()) {
+					echo '<a href="'.$page->prev()->url().'">&laquo; Prev: '.$page->prev()->title().'</a>';
+				}
+
+				if ($page->hasNext()) {
+					echo '<a href="'.$page->next()->url().'">Next: '.$page->next()->title().' &raquo;</a>';
+				}
+			}
+		?>
 	</nav>
 
 
