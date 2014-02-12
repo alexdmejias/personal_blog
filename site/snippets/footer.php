@@ -1,10 +1,6 @@
-		<footer class="footer wrap-narrow cleapfix" role="contentinfo">
+		<footer class="one-main" role="contentinfo">
 
-			<div id="inner-footer" class="one-main clearfix">
-
-				<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Alex Mejias.</p>
-
-			</div> <?php // end #inner-footer ?>
+			<p>&copy; <?php echo date('Y'); ?> Alex Mejias.</p>
 
 		</footer> <?php // end footer ?>
 
