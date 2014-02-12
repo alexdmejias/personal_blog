@@ -367,6 +367,8 @@ input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -434,6 +436,7 @@ p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto; }
 
 b, strong, .strong {
@@ -478,13 +481,31 @@ TOOLS
   margin: 0 auto; }
 
 .wrap {
-  width: 60%;
+  width: 80%;
   margin: 0 auto; }
 
 .wrap-narrow {
-  width: 40%;
+  width: 70%;
   margin: 0 auto; }
 
+@media screen and (min-width: 700px) {
+  .wrap-wide {
+    width: 95%; }
+
+  .wrap {
+    width: 75%; }
+
+  .wrap-narrow {
+    width: 60%; } }
+@media screen and (min-width: 1000px) {
+  .wrap-wide {
+    width: 95%; }
+
+  .wrap {
+    width: 60%; }
+
+  .wrap-narrow {
+    width: 40%; } }
 /*********************
 GENERAL STYLES
 *********************/
@@ -492,22 +513,33 @@ body {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #565656; }
+  color: #565656;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh; }
 
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.header {
-  width: 100%;
-  background: #222222;
-  position: fixed;
-  height: 45px; }
+section {
+  padding: 45px 0 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  section nav a {
+    width: 100%;
+    display: block;
+    margin: 0; }
+    section nav a:nth-child(even) {
+      margin: 0 0 0 20px; }
 
-.content {
-  padding: 45px 0 0; }
-
-nav li {
-  float: left; }
+footer p {
+  font-size: 0.9em; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -536,14 +568,9 @@ h5, .h5 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-a, a:visited {
-  color: #b00000;
-  text-decoration: none; }
-
 /* on hover */
-a:hover {
-  color: #999999;
-  border-bottom: 2px dashed #999999; }
+p {
+  font-size: 1.2em; }
 
 .prominent {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -553,14 +580,80 @@ a:hover {
   font-style: italic; }
 
 .title {
-  color: #666666;
-  float: left; }
+  font-style: italic;
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif; }
 
 code {
   background: #999999;
   color: black;
   padding: 0 6px; }
 
+header {
+  text-align: justify;
+  height: auto;
+  padding: 2em 5%;
+  background: #2c3e50;
+  color: #fff; }
+  header::after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  header div {
+    width: 50%;
+    height: 100%; }
+    header div::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%; }
+  header a, header a:visited {
+    color: rgba(255, 255, 255, 0.8); }
+  header a {
+    text-decoration: none;
+    position: relative; }
+    header a::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.8);
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s;
+      -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      transform: translateY(10px); }
+    header a:hover::after, header a:focus::after {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px); }
+  header nav a {
+    margin: 0 5px;
+    text-transform: capitalize; }
+
+header > div,
+header > div h1,
+header nav {
+  height: auto;
+  width: auto;
+  display: block;
+  text-align: center; }
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 8em; }
+    header div {
+      height: 100%; }
+
+  header > div,
+  header nav,
+  header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left; } }
 @media only screen and (min-width: 768px) {
   .onecol {
     width: 5.801104972%; }
