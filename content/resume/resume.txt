@@ -1,0 +1,64 @@
+Title: Resume
+----
+Template: resume
+----
+Text:
+
+## Experience
+
+### Group SJR
+March. '13 - Feb. '14
+Web Developer
+
+Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
+
+### AD:60 - DUMBO, NY
+Sept. '12 - Present
+Junior Web Developer
+
+Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
+### (UN) Common Visions - Queens, NY
+March '12 - May '12
+Assistant Organizer
+
+Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
+### Control Electropolishing Corp.
+Jul. '11 - Sept. '11
+Freelance Web Designer & Developer
+
+Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and Jquery.
+### (OPT Central - Manhattan, NY
+March '12 - May '12
+Assistant Organizer
+
+Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
+### Total Aquariums - Lynbrook, NY
+Jul '07 - Nov. '08
+Assistant Manager
+
+Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
+
+## Languages
+
+Fluent in Spanish
+Proficient in Italian
+
+## Education
+
+Queens College, City College of New York
+Bachelor of Science in Graphic Design
+Minor: Business and Liberal Arts Honors Program
+September 2008 - June 2012
+
+## Skills
+
+Mac, Linux and Windows platforms
+HTML(5), Javascript, CSS(3) and Jquery
+Adobe Photoshop, Illustrator and InDesign
+Wordpress (develpment)
+Git and SVN
+
+PHP and MySQL
+Photography
+Microsoft Office
+Working knowledge of Python and Ruby, and Ruby on Rails, and CakePHP
