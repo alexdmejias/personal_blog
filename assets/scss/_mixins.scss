@@ -24,55 +24,6 @@ TOOLS
 	&:after { clear: both; }
 }
 
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-}
-
-
-.wrap-wide {
-	width: 95%;
-	margin: 0 auto;
-}
-
-.wrap {
-	width: 80%;
-	margin: 0 auto;
-}
-
-.wrap-narrow {
-	width: 70%;
-	margin: 0 auto;
-}
-
-
-
-@media screen and (min-width: 700px) {
-	.wrap-wide {
-		width: 95%;
-	}
-
-	.wrap {
-		width: 75%;
-	}
-
-	.wrap-narrow {
-		width: 60%;
-	}
-}
-
-@media screen and (min-width: 1000px) {
-	.wrap-wide {
-		width: 95%;
-	}
-
-	.wrap {
-		width: 60%;
-	}
-
-	.wrap-narrow {
-		width: 40%;
-	}
+.ta_center {
+	text-align: center;
 }
