@@ -32,18 +32,23 @@ h5, .h5 {
 }
 
 a, a:visited {
-	color: $secondary-color;
-	text-decoration: none;
+	// color: $secondary-color;
+	// text-decoration: none;
 }
 /* on hover */
 a:hover {
-	color: $grey-light;
-	border-bottom: 2px dashed $grey-light;
+	// color: $grey-light;
+	// border-bottom: 2px dashed $grey-light;
+}
+
+p {
+	font-size: 1.2em;
 }
 
 .prominent {
 	font-family: $sans-serif;
 }
+
 
 .special {
 	font-family: $special;
@@ -51,12 +56,11 @@ a:hover {
 }
 
 .title {
-	color: $grey-medium;
-	float: left;
+	font-style: italic;
+	font-family: $serif;
 }
 
-code {
-	background: $grey-light;
+code {	background: $grey-light;
 	color: $black;
 	padding: 0 6px;
 }
