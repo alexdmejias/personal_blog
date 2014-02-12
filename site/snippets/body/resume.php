@@ -1,11 +1,8 @@
-<section class="content wrap-narrow clearfix">
+<section class="content wrap">
 	<h2 class="title"><?php echo html($page->title()) ?></h2>
-	<?php snippet('submenu'); ?>
 
-	<article>
+	<article class="resume">
 		<?php echo kirbytext($page->text()) ?>
 	</article>
-
-	<?php snippet('prevnext'); ?>
 
 </section>

@@ -29,7 +29,7 @@
 
 <body>
 
-	<header class="header" role="banner">
+	<header role="banner">
 		<div>
 			<h1 class="h5"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
 		</div>

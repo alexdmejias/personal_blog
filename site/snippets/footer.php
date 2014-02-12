@@ -1,4 +1,4 @@
-		<footer class="one-main" role="contentinfo">
+		<footer class="ta_center wrap" role="contentinfo">
 
 			<p>&copy; <?php echo date('Y'); ?> Alex Mejias.</p>
 
