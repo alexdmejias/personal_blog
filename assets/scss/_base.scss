@@ -6,16 +6,15 @@ body {
 	font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: $grey;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-
 
 section {
 	padding: 45px 0 0;
+	flex: 1;
 
 	nav a {
 		width: 100%;

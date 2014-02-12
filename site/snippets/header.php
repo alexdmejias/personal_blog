@@ -13,7 +13,6 @@
 
 	<title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
 
-	<?php // mobile meta (hooray!) ?>
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -30,12 +29,9 @@
 
 <body>
 
-	<div id="container">
-
-		<header class="header" role="banner">
-
-			<div class="inner-header wrap-wide">
-				<h1 class="h5"><a href="<?php echo url() ?>" class="title"><?php echo html($site->title()) ?></a></h1>
-				<?php snippet('menu'); ?>
-			</div>
-		</header>
+	<header class="header" role="banner">
+		<div>
+			<h1 class="h5"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
+		</div>
+		<?php snippet('menu'); ?>
+	</header>
