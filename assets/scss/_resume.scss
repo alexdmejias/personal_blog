@@ -14,9 +14,21 @@
 				flex-basis: 100%;
 				justify-content: space-between;
 				align-content: flex-start;
-				p:last-child {
+				p:last-of-type {
 					margin: 0;
 					font-size: 1em;
+				}
+				hr {
+					border: 0;
+					border-bottom: 1px solid $white;
+					width: 1px;
+					transition: all 0.5s;
+				}
+				&:hover {
+					hr {
+						width: 10%;
+						border-bottom-color: #eee;
+					}
 				}
 			}
 

@@ -26,8 +26,44 @@
   float: right;
 }
 
-.one-main {
-	width: 82.87292817100001%;
-	margin: 0 auto;
-	text-align: center;
+
+/* WRAP */
+.wrap-wide {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wrap {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wrap-narrow {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+@media screen and (min-width: 700px) {
+	.wrap {
+		width: 80%;
+	}
+
+	.wrap-narrow {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.wrap {
+		width: 60%;
+	}
+
+	.wrap-narrow {
+		width: 40%;
+	}
 }

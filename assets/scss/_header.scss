@@ -1,8 +1,9 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 2em;
+	padding: 1em 3em;
 	background: #2c3e50;
+	background: red;
 	align-items: center;
 	flex-direction: column;
 	transition: all 0.3s;
@@ -11,6 +12,7 @@ header {
 		text-decoration: none;
 		position: relative;
 		opacity: 0.6;
+		top: 0;
 		&::after {
 			position: absolute;
 			top: 75%;
@@ -51,7 +53,7 @@ header {
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 	header {
 		flex-direction: row;
 		padding: 2em 3em;
