@@ -33,9 +33,24 @@ module.exports = function(grunt) {
 				files: ['site/**/*.php']
 			},
 
+			txt: {
+				files: ['content/**/*.txt']
+			},
+
 			js: {
 				files: ['<%= paths.libraryDir %>/js/**/*.js', '!<%= paths.libraryDir %>/js/scripts.concat.js'],
 				tasks: ['concat']
+			}
+		},
+
+		concat: {
+			options: {
+				separator: ';'
+			},
+
+			dist: {
+				src: ['<%= paths.libraryDir %>/js/libs/*.js', '<%= paths.libraryDir %>/js/scripts.js'],
+				dest: '<%= paths.libraryDir %>/js/scripts.concat.js'
 			}
 		},
 
