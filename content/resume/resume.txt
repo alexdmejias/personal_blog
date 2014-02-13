@@ -19,6 +19,8 @@ March. '13 - Feb. '14
 
 Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
 
+****
+
 </div>
 
 <div markdown="1">
@@ -29,6 +31,8 @@ Junior Web Developer
 Sept. '12 - Present
 
 Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
+
+****
 
 </div>
 
@@ -41,6 +45,8 @@ March '12 - May '12
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
 
+****
+
 </div>
 
 <div markdown="1">
@@ -51,6 +57,8 @@ Freelance Web Designer & Developer
 Jul. '11 - Sept. '11
 
 Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and Jquery.
+
+****
 
 </div>
 
@@ -63,6 +71,8 @@ March '12 - May '12
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
 
+****
+
 </div>
 
 <div markdown="1">
@@ -73,6 +83,8 @@ Assistant Manager
 Jul '07 - Nov. '08
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
+
+****
 
 </div>
 
