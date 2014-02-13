@@ -1,31 +1,15 @@
 header {
-    text-align: justify;
-    height: auto;
-    padding: 2em 5%;
-    background: #2c3e50;
-    color: #fff;
-	&::after {
-	    content: '';
-	    display: inline-block;
-	    width: 100%;
-	}
-	div {
-	    width: 50%;
-	    height: 100%;
-	    &::before {
-		    content: '';
-		    display: inline-block;
-		    vertical-align: middle;
-		    height: 100%;
-		}
-	}
-	a, a:visited {
-		color: rgba($white, 0.8);
-	}
+	display: flex;
+	justify-content: space-between;
+	padding: 2em;
+	background: #2c3e50;
+	align-items: center;
+	flex-direction: column;
 
 	a {
 		text-decoration: none;
 		position: relative;
+		opacity: 0.6;
 		&::after {
 			position: absolute;
 			top: 100%;
@@ -40,44 +24,31 @@ header {
 			-webkit-transform: translateY(10px);
 			transform: translateY(10px);
 		}
+		&:hover {
+			opacity: 1;
+		}
 		&:hover::after, &:focus::after {
 			opacity: 1;
 			-webkit-transform: translateY(0px);
 			transform: translateY(0px);
 		}
 	}
+
+	a, a:visited {
+		color: $white;
+	}
+
 	nav {
+		text-align: center;
 		a {
 			margin: 0 5px;
-			text-transform: capitalize;
 		}
 	}
 }
 
-header > div,
-header > div h1,
-header nav {
-    height: auto;
-    width: auto;
-    display: block;
-    text-align: center;
-}
-
-@media screen and (min-width: 600px){
-
-    header {
-	    height: 8em;
-	    div {
-	    	height: 100%;
-	    }
-    }
-
-	header > div,
-	header nav,
-	header > div h1 {
-	    display: inline-block;
-	    vertical-align: middle;
-	    text-align: left;
+@media screen and (min-width: 500px) {
+	header {
+		flex-direction: row;
+		padding: 3em;
 	}
-
 }

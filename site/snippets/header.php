@@ -30,8 +30,6 @@
 <body>
 
 	<header role="banner">
-		<div>
-			<h1 class="h5"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
-		</div>
+		<h1 class="h5"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>
 		<?php snippet('menu'); ?>
 	</header>
