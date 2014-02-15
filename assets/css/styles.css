@@ -705,15 +705,8 @@ header {
   transition: all 0.5s; }
 .resume h3 {
   font-size: 0.95em;
-  margin: 0;
-  display: inline-block;
   margin: 4px 0 0;
-  float: left;
   text-decoration: none; }
-  .resume h3:nth-child(even) {
-    float: right; }
-  .resume h3:last-of-type {
-    width: 100%; }
 @media screen and (min-width: 800px) {
   .resume article h2, .resume h3 {
     font-size: 1.1em; }
@@ -729,6 +722,13 @@ header {
       margin-top: 10px; }
   .resume div > div div {
     padding: 0 0 0 15px; }
+    .resume div > div div h3 {
+      display: inline-block;
+      float: left; }
+      .resume div > div div h3:nth-child(even) {
+        float: right; }
+      .resume div > div div h3:last-of-type {
+        width: 100%; }
     .resume div > div div p:first-child {
       margin: 6px 0 0; }
     .resume div > div div:hover hr {
