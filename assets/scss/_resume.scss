@@ -1,42 +1,15 @@
 .resume {
-	& > div {
-		flex-direction: column;
-	}
-	div {
-		display: flex;
 
-		& > div {
-			flex-wrap: wrap;
-			margin: 14px 0 0;
-
-			div {
-				margin: 0 0 35px;
-				flex-basis: initial;
-				// justify-content: space-between;
-				// align-content: flex-start;
-				// flex-direction: row;
-				// flex-wrap: wrap;
-				display: block;
-				position: relative;
-				&:hover {
-					hr {
-						width: 10%;
-						border-bottom-color: #eee;
-					}
-				}
-			}
-
-		}
-	}
-
-	h3 {
+	article h2 {
 		text-decoration: underline;
+		font-size: 0.95em;
+		font-weight: bold;
 	}
 
 	p {
-		// flex: auto;
-		// float: left;
-		font-size: 1em;
+		font-size: 0.85em;
+		clear: both;
+		float: none;
 	}
 	hr {
 		border: 0;
@@ -45,38 +18,52 @@
 		transition: all 0.5s;
 	}
 
+	h3 {
+		font-size: 0.95em;
+		margin: 0;
+		display: inline-block;
+		margin: 4px 0 0;
+		float:left;
+		text-decoration: none;
+		&:nth-child(even) {
+			float: right;
+		}
+		&:last-of-type {
+			width: 100%;
+		}
+	}
+
+
 
 	@media screen and (min-width: 800px) {
-		& > div {
-			flex-direction: row;
-			justify-content: space-between;
-		}
-
-		div {
-			h2 {
-				flex-basis: 20%;
+		article h2, h3 { font-size: 1.1em;}
+		p { font-size: 1em;}
+		.row {
+			@extend .clearfix;
+			overflow: hidden;
+			& > h2, & > div {
+				float: left;
+				width: 20%;
 			}
 			& > div {
-				flex-basis: 74%;
-				flex-direction: column;
+				width: 80%;
+				margin-top: 10px;
+			}
+		}
+		div {
+			& > div {
 				div {
 					padding: 0 0 0 15px;
 
-					h3 {
-						margin: 0;
-						display: inline-block;
-						margin: 4px 0 0;
-						float:left;
-						text-decoration: none;
-						&:nth-child(even) {
-							float: right;
-						}
-						&:last-of-type {
-							width: 100%;
-						}
-					}
 					p:first-child {
 						margin: 6px 0 0;
+					}
+
+					&:hover {
+						hr {
+							width: 10%;
+							border-bottom-color: #eee;
+						}
 					}
 				}
 			}

@@ -59,6 +59,10 @@ p {
 .title {
 	font-style: italic;
 	font-family: $serif;
+	text-align: center;
+	@media screen and (min-width: 600px) {
+		text-align: left;
+	}
 }
 
 code {	background: $grey-light;

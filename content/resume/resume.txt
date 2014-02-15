@@ -4,9 +4,9 @@ Template: resume
 ----
 Text:
 
-<div markdown="1">
+<div class="row" markdown="1">
 
-### Experience
+## Experience
 
 <div markdown="1">
 
@@ -24,7 +24,7 @@ Primarily worked maintaining a news and reviews website, implementing new featur
 
 <div markdown="1">
 
-### AD:60 - DUMBO, NY
+### AD:60 - Brooklyn, NY
 ### Sept. '12 - Present
 ### Junior Web Developer
 
@@ -86,9 +86,9 @@ Coordinated between professors and graphic design students to participate in the
 
 </div>
 
-<div markdown="1">
+<div class="row" markdown="1">
 
-### Languages
+## Languages
 
 <div markdown="1">
 
@@ -103,9 +103,9 @@ Proficient in Italian
 
 </div>
 
-<div markdown="1">
+<div class="row" markdown="1">
 
-### Education
+## Education
 
 <div markdown="1">
 
@@ -122,24 +122,20 @@ September 2008 - June 2012
 
 </div>
 
-<div markdown="1">
+<div class="row" markdown="1">
 
-### Skills
-
-<div markdown="1">
+## Skills
 
 <div markdown="1">
 
-Mac, Linux and Windows platforms
-HTML(5), Javascript, CSS(3) and Jquery
-Adobe Photoshop, Illustrator and InDesign
+<div markdown="1">
+
+HTML, Javascript, CSS and Jquery
 Wordpress (develpment)
 Git and SVN
-
 PHP and MySQL
-Photography
-Microsoft Office
-Working knowledge of Python and Ruby, and Ruby on Rails, and CakePHP
+Working knowledge of Laravel and Ruby, and Ruby on Rails, and CakePHP
+Adobe Photoshop, Illustrator and InDesign
 
 </div>
 
