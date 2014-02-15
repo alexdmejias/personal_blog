@@ -6,7 +6,7 @@ $(window).on('load resize', function() {
     console.log(app);
 });
 
-$(document).scroll(function(){
+$(document).on('scroll load', function(){
     if (app.windowWidth > 499) {
         if ($(window).scrollTop() > 20) {
             $('header').addClass('scrolled')
