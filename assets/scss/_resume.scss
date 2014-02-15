@@ -11,19 +11,13 @@
 
 			div {
 				margin: 0 0 35px;
-				flex-basis: 100%;
-				justify-content: space-between;
-				align-content: flex-start;
-				p:last-of-type {
-					margin: 0;
-					font-size: 1em;
-				}
-				hr {
-					border: 0;
-					border-bottom: 1px solid $white;
-					width: 1px;
-					transition: all 0.5s;
-				}
+				flex-basis: initial;
+				// justify-content: space-between;
+				// align-content: flex-start;
+				// flex-direction: row;
+				// flex-wrap: wrap;
+				display: block;
+				position: relative;
 				&:hover {
 					hr {
 						width: 10%;
@@ -34,6 +28,23 @@
 
 		}
 	}
+
+	h3 {
+		text-decoration: underline;
+	}
+
+	p {
+		// flex: auto;
+		// float: left;
+		font-size: 1em;
+	}
+	hr {
+		border: 0;
+		border-bottom: 1px solid $white;
+		width: 1px;
+		transition: all 0.5s;
+	}
+
 
 	@media screen and (min-width: 800px) {
 		& > div {
@@ -47,6 +58,27 @@
 			}
 			& > div {
 				flex-basis: 74%;
+				flex-direction: column;
+				div {
+					padding: 0 0 0 15px;
+
+					h3 {
+						margin: 0;
+						display: inline-block;
+						margin: 4px 0 0;
+						float:left;
+						text-decoration: none;
+						&:nth-child(even) {
+							float: right;
+						}
+						&:last-of-type {
+							width: 100%;
+						}
+					}
+					p:first-child {
+						margin: 6px 0 0;
+					}
+				}
 			}
 		}
 	}

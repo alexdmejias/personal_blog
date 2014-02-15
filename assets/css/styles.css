@@ -549,11 +549,11 @@ h2, .h2 {
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 1.125em; }
-
-h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
+
+h4, .h4 {
+  font-size: 1.1em; }
 
 h5, .h5 {
   font-size: 0.846em;
@@ -603,7 +603,10 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  -webkit-box-shadow: -1px 12px 14px white;
+  box-shadow: -1px 12px 14px white;
+  z-index: 99; }
   header a {
     text-decoration: none;
     position: relative;
@@ -759,28 +762,24 @@ header {
     margin: 14px 0 0; }
     .resume div > div div {
       margin: 0 0 35px;
-      -webkit-flex-basis: 100%;
-      -ms-flex: 0 1 100%;
-      flex-basis: 100%;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-      align-content: flex-start; }
-      .resume div > div div p:last-of-type {
-        margin: 0;
-        font-size: 1em; }
-      .resume div > div div hr {
-        border: 0;
-        border-bottom: 1px solid white;
-        width: 1px;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+      -webkit-flex-basis: initial;
+      -ms-flex: 0 1 initial;
+      flex-basis: initial;
+      display: block;
+      position: relative; }
       .resume div > div div:hover hr {
         width: 10%;
         border-bottom-color: #eee; }
+.resume h3 {
+  text-decoration: underline; }
+.resume p {
+  font-size: 1em; }
+.resume hr {
+  border: 0;
+  border-bottom: 1px solid white;
+  width: 1px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 @media screen and (min-width: 800px) {
   .resume > div {
     -webkit-box-orient: horizontal;
@@ -799,4 +798,23 @@ header {
   .resume div > div {
     -webkit-flex-basis: 74%;
     -ms-flex: 0 1 74%;
-    flex-basis: 74%; } }
+    flex-basis: 74%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .resume div > div div {
+      padding: 0 0 0 15px; }
+      .resume div > div div h3 {
+        margin: 0;
+        display: inline-block;
+        margin: 4px 0 0;
+        float: left;
+        text-decoration: none; }
+        .resume div > div div h3:nth-child(even) {
+          float: right; }
+        .resume div > div div h3:last-of-type {
+          width: 100%; }
+      .resume div > div div p:first-child {
+        margin: 6px 0 0; } }
