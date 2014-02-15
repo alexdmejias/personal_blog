@@ -7,6 +7,8 @@ header {
 	align-items: center;
 	flex-direction: column;
 	transition: all 0.3s;
+	box-shadow: -1px 12px 14px $white;
+	z-index: 99;
 
 	a {
 		text-decoration: none;

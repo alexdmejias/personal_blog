@@ -6,16 +6,15 @@ Text:
 
 <div markdown="1">
 
-## Experience
+### Experience
 
 <div markdown="1">
 
 <div markdown="1">
 
-Group SJR
-Web Developer
-
-March. '13 - Feb. '14
+### Group SJR
+### March. '13 - Feb. '14
+### Web Developer
 
 Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
 
@@ -25,10 +24,9 @@ Primarily worked maintaining a news and reviews website, implementing new featur
 
 <div markdown="1">
 
-AD:60 - DUMBO, NY
-Junior Web Developer
-
-Sept. '12 - Present
+### AD:60 - DUMBO, NY
+### Sept. '12 - Present
+### Junior Web Developer
 
 Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass andCakePHP. Also involved in coding HTML newsletters and features for outside clients.
 
@@ -38,10 +36,9 @@ Primarily worked maintaining a news and reviews website, implementing new featur
 
 <div markdown="1">
 
-(UN) Common Visions - Queens, NY
-Assistant Organizer
-
-March '12 - May '12
+### (UN) Common Visions - Queens, NY
+### March '12 - May '12
+### Assistant Organizer
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
 
@@ -51,10 +48,9 @@ Coordinated between professors and graphic design students to participate in the
 
 <div markdown="1">
 
-Control Electropolishing Corp.
-Freelance Web Designer & Developer
-
-Jul. '11 - Sept. '11
+### Control Electropolishing Corp.
+### Jul. '11 - Sept. '11
+### Freelance Web Designer & Developer
 
 Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and Jquery.
 
@@ -64,10 +60,9 @@ Worked along side the Senior front-end developer and the in house Graphic Design
 
 <div markdown="1">
 
-(OPT Central - Manhattan, NY
-Assistant Organizer
-
-March '12 - May '12
+### (OPT Central - Manhattan, NY
+### March '12 - May '12
+### Assistant Organizer
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
 
@@ -77,10 +72,9 @@ Coordinated between professors and graphic design students to participate in the
 
 <div markdown="1">
 
-Total Aquariums - Lynbrook, NY
-Assistant Manager
-
-Jul '07 - Nov. '08
+### Total Aquariums - Lynbrook, NY
+### Jul '07 - Nov. '08
+### Assistant Manager
 
 Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
 
@@ -94,7 +88,9 @@ Coordinated between professors and graphic design students to participate in the
 
 <div markdown="1">
 
-## Languages
+### Languages
+
+<div markdown="1">
 
 <div markdown="1">
 
@@ -105,9 +101,13 @@ Proficient in Italian
 
 </div>
 
+</div>
+
 <div markdown="1">
 
-## Education
+### Education
+
+<div markdown="1">
 
 <div markdown="1">
 
@@ -120,8 +120,15 @@ September 2008 - June 2012
 
 </div>
 
+</div>
 
-## Skills
+<div markdown="1">
+
+### Skills
+
+<div markdown="1">
+
+<div markdown="1">
 
 Mac, Linux and Windows platforms
 HTML(5), Javascript, CSS(3) and Jquery
@@ -133,3 +140,9 @@ PHP and MySQL
 Photography
 Microsoft Office
 Working knowledge of Python and Ruby, and Ruby on Rails, and CakePHP
+
+</div>
+
+</div>
+
+</div>
