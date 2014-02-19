@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="<?php echo pageSlug() ?>">
+<body class="<?php echo pageSlug() . '-body' ?>">
 
 	<header role="banner">
 		<h1 class="h5"><a href="<?php echo url() ?>"><?php echo html($site->title()) ?></a></h1>

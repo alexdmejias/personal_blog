@@ -17,20 +17,23 @@ $tertiary-color: red;
 /*********************
 TOOLS
 *********************/
-
-.clearfix {
-  zoom: 1;
+@mixin clearfix {
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
+	zoom: 1;
+}
+
+.clearfix {
+  @include clearfix;
 }
 
 .ta_center {
 	text-align: center;
 }
 
-.home header {       background: #2ecc71 }
-.about header {      background: #f39c12 }
-.projects header {   background: #e74c3c }
-.contact header {    background: #3498db }
-.blog header {       background: #34495e }
-.resume header {     background: #d35400 }
+.home-body header {       background: #2ecc71 }
+.about-body header {      background: #f39c12 }
+.projects-body header {   background: #e74c3c }
+.contact-body header {    background: #3498db }
+.blog-body header {       background: #34495e }
+.resume-body header {     background: #d35400 }
