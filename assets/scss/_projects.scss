@@ -1,0 +1,76 @@
+.projects-body {
+	.project {
+		width: 50%;
+		height: 300px;
+		position: relative;
+		margin-top: 20px;
+		background-position: 50%;
+		background-size: cover;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			&:before {
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+				content: '';
+			}
+			width: 100%;
+			height: 100%;
+			display:inline-block;
+			text-decoration: none;
+			text-align: center;
+			position: relative;
+			transition: 0.5s all;
+			&:hover {
+				background: rgba($black, 0.55);
+
+				p {
+					opacity: 1;
+				}
+				h5 {
+					// background: rgba($black, 0.01);
+					background: none;
+				}
+			}
+		}
+
+		h5, p {
+			width: 100%;
+		}
+		h5 {
+			color: rgba($white, 0.65);
+			// opacity: 0.65;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 0.9em;
+			font-family: $sans-serif;
+			position: absolute;
+			bottom: 0;
+			background: rgba($black, 0.5);
+			margin: 0;
+			transition: 0.5s all;
+		}
+		p {
+			color: $white;
+			vertical-align: middle;
+			opacity: 0;
+			transition: 0.5s all;
+			display: inline-block;
+			width: 90%;
+		}
+	}
+	@media screen and (min-width:500px) {
+		.project {
+			width: 24%;
+			margin-left: 1.333%;
+			height: 300px;
+			max-width: 250px;
+			float: left;
+			&:nth-child(2n+5) {
+				margin-left: 0;
+			}
+		}
+	}
+}
