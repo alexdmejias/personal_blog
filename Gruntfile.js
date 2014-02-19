@@ -62,6 +62,9 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
+			options: {
+				sourcemap: true
+			},
 			dist: {
 				files: {
 					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
