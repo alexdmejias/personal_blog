@@ -9,10 +9,16 @@ $grey-light: #999;
 $grey-medium: #666;
 $grey-dark: #222;
 
-$primary-color: yellow;
+// $primary-color: yellow;
 $secondary-color: #B00000;
 $tertiary-color: red;
 
+$blue: #3498db;
+$blue_dark: #34495e;
+$red: #e74c3c;
+$green: #2ecc71;
+$orange: #d35400;
+$yellow: #f39c12;
 
 /*********************
 TOOLS
@@ -31,9 +37,9 @@ TOOLS
 	text-align: center;
 }
 
-.home-body header {       background: #2ecc71 }
-.about-body header {      background: #f39c12 }
-.projects-body header {   background: #e74c3c }
-.contact-body header {    background: #3498db }
-.blog-body header {       background: #34495e }
-.resume-body header {     background: #d35400 }
+.home-body header {       background: $green }
+.about-body header {      background: $yellow }
+.projects-body header {   background: $red }
+.contact-body header {    background: $blue }
+.blog-body header {       background: $blue_dark }
+.resume-body header {     background: $orange }

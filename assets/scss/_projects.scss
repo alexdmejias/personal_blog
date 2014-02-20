@@ -1,4 +1,8 @@
 .projects-body {
+	.personal h5 { border-color: $blue }
+	.experiment h5 { border-color: $red }
+	.case_study h5 { border-color: $green }
+
 	.project {
 		width: 50%;
 		height: 300px;
@@ -25,32 +29,13 @@
 			transition: 0.5s all;
 			&:hover {
 				background: rgba($black, 0.55);
-
 				p {
 					opacity: 1;
 				}
 				h5 {
-					// background: rgba($black, 0.01);
 					background: none;
 				}
 			}
-		}
-
-		h5, p {
-			width: 100%;
-		}
-		h5 {
-			color: rgba($white, 0.65);
-			// opacity: 0.65;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 0.9em;
-			font-family: $sans-serif;
-			position: absolute;
-			bottom: 0;
-			background: rgba($black, 0.5);
-			margin: 0;
-			transition: 0.5s all;
 		}
 		p {
 			color: $white;
@@ -60,6 +45,22 @@
 			display: inline-block;
 			width: 90%;
 		}
+	}
+	h5, p {
+		width: 100%;
+	}
+	h5 {
+		color: rgba($white, 0.65);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.9em;
+		font-family: $sans-serif;
+		position: absolute;
+		bottom: 0;
+		background: rgba($black, 0.5);
+		margin: 0;
+		transition: 0.5s all;
+		border-top: 3px solid transparent;
 	}
 	@media screen and (min-width:500px) {
 		.project {
