@@ -3,9 +3,11 @@
 		<?php echo html($page->title()) ?>
 		<?php
 			$children = $page->children();
+			echo '<span>';
 			foreach ($children as $key) {
 				echo '<a href="#'.strtolower(str_replace(' ', '_', $key->title)).'">'.$key->title.'</a>';
 			}
+			echo '</span>';
 		?>
 	</h2>
 	<article>

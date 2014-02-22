@@ -1,16 +1,20 @@
 .projects-body {
 	.title {
+		span {
+			display: block;
+		}
 		a {
 			display: inline-block;
 			margin: 0 3px;
 			width: auto;
 			background: $red;
-			padding: 3px 5px 1px;
+			padding: 4px 5px 2px;
 			color: $white;
 			border-radius: 3px;
 			font-size: 0.5em;
 			text-decoration: none;
 			line-height: 1;
+			width: 31%;
 		}
 	}
 
@@ -63,11 +67,23 @@
 		transition: 0.5s all;
 	}
 	@media screen and (min-width: 500px) {
+		.title {
+			span {
+				display: inline;
+			}
+			a {
+				width: auto;
+			}
+		}
+
 		.project {
+
+
 			width: 32.333%;
 			margin-left: 1.333%;
 			height: 240px;
 			max-width: 250px;
+
 			&:nth-child(2n+4) {
 				margin-left: 0;
 			}
@@ -97,7 +113,7 @@
 		.project {
 			width: 24%;
 			height: 250px;
-			margin-top: 30px;
+			margin-bottom: 30px;
 			&:nth-child(2n+4) {
 				margin-left: 1.333%
 			}
