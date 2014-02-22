@@ -24,7 +24,7 @@ if ($('.projects-body').length) {
         e.preventDefault();
         var index = $(this).index();
         $('html, body').animate({
-        scrollTop: $('.projects').children().eq(index).offset().top
+        scrollTop: $('article').children('h3').eq(index).offset().top
         }, 1000);
     })
 }
