@@ -16,6 +16,16 @@ $(document).on('scroll load', function(){
     }
 });
 
+if ($('.projects-body').length) {
+    $('a').on('click', $('.title'), function(e) {
+        e.preventDefault();
+        var index = $(this).index();
+        $('html, body').animate({
+        scrollTop: $('.projects').children().eq(index).offset().top
+        }, 1000);
+    })
+}
+
 /*! A fix for the iOS orientationchange zoom bug.
  Script by @scottjehl, rebound by @wilto.
  MIT License.
