@@ -1,7 +1,18 @@
 .projects-body {
-	.personal h5 { border-color: $blue }
-	.experiment h5 { border-color: $red }
-	.case_study h5 { border-color: $green }
+	.title {
+		a {
+			display: inline-block;
+			margin: 0 3px;
+			width: auto;
+			background: $red;
+			padding: 3px 5px 1px;
+			color: $white;
+			border-radius: 3px;
+			font-size: 0.5em;
+			text-decoration: none;
+			line-height: 1;
+		}
+	}
 
 	.project {
 		width: 49%;
@@ -50,7 +61,6 @@
 		background: rgba($black, 0.5);
 		margin: 0;
 		transition: 0.5s all;
-		border-top: 3px solid transparent;
 	}
 	@media screen and (min-width: 500px) {
 		.project {
