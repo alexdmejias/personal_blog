@@ -23,15 +23,14 @@
 		height: 230px;
 		position: relative;
 		margin-top: 5px;
+		margin-left: 2%;
 		background-position: 50%;
 		background-size: cover;
 		float: left;
-		&:first-child {
-			margin-left: 0;
-		}
+		display: inline-block;
 
-		&:nth-child(even) {
-			margin-left: 1%;
+		&:nth-child(2n+1) {
+			margin-left: 0%;
 		}
 		a {
 			width: 100%;
@@ -77,16 +76,18 @@
 		}
 
 		.project {
-
-
 			width: 32.333%;
-			margin-left: 1.333%;
 			height: 240px;
 			max-width: 250px;
+			margin-left: 1.5%;
 
-			&:nth-child(2n+4) {
-				margin-left: 0;
+			&:nth-child(n+2) {
+				margin-left: 1.5%;
 			}
+			&:nth-child(3n+1) {
+				margin-left: 0%;
+			}
+
 			a {
 				&:before {
 					height: 100%;
@@ -109,21 +110,23 @@
 			}
 		}
 	}
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 700px) {
 		.project {
 			width: 24%;
 			height: 250px;
-			margin-bottom: 30px;
-			&:nth-child(2n+4) {
-				margin-left: 1.333%
+			margin-bottom: 20px;
+			margin-left: 1.333%;
+			&:nth-child(n+2), &:nth-child(3n+1) {
+				margin-left: 1.333%;
 			}
-			&:nth-child(2n+5) {
-				margin-left: 1px;
+			&:nth-child(4n+1) {
+				margin-left: 0%;
 			}
+
 		}
 	}
 
-	@media screen and (min-width: 700px) {
+	@media screen and (min-width: 900px) {
 		.project {
 			height: 280px;
 		}

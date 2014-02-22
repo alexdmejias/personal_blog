@@ -15,12 +15,13 @@
 
 			echo kirbytext($page->text());
 
-			echo '<div class="projects clearfix">';
 			foreach ($page->children() as $child) {
 
-				echo '<div class="clearfix">';
 				echo '<h3 id="'.strtolower(str_replace(' ', '_', $child->title)).'">'.$child->title.'</h3>';
 				echo kirbytext($child->text());
+
+				echo '<div class="projects clearfix">';
+
 				foreach ($child->children() as $grandchild) {
 					/*************/
 					/* Only for testing */
@@ -36,9 +37,9 @@
 						'<p>'.$grandchild->excerpt.'</p>'.
 						'</a></div>';
 				}
-				echo '</div>';
-			}
+
 			echo '</div>';
+			}
 		?>
 
 	</article>
