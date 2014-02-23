@@ -20,7 +20,7 @@ $(document).on('scroll load', function(){
 });
 
 if ($('.projects-body').length) {
-    $('a').on('click', $('.title'), function(e) {
+    $('.title').on('click', 'a', function(e) {
         e.preventDefault();
         var index = $(this).index();
         $('html, body').animate({

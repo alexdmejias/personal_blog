@@ -35,10 +35,10 @@
 						'<div class="project" style="background-image:url(http://lorempixel.com/200/300/'. $topic.')" ><a href="'. $grandchild->url() .'"> '.
 						'<h5>'.$grandchild->title.'</h5>'.
 						'<p>'.$grandchild->excerpt.'</p>'.
-						'</a></div>';
-				}
+						'</a> </div>';
+					}
 
-			echo '</div>';
+			echo '<hr /></div>';
 			}
 		?>
 
