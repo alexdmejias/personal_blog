@@ -1,0 +1,15 @@
+title: Lets pick our battles
+----
+text: At a recent "The New York HTML5 Application Developers Group" meetup @______ touched on a good point, that I think that is critical for our industry has to embrace. The point to embrace is that __not everything has to be a war__. We *can* live in a world where there are more than one build tool, or more than three JS frame works, or more than two CSS preprocessors. And guess what? you don't need to learn them all.
+
+The recent emergance of Gulp, has put everybody back to arms and taking sides. How many of us have stopped and thought about the fact that Grunt and Gulp can curently achieve the samethings(given that the same plugins exist), but might be better suited for better scenarios? Right before this debate had started everybody was busy taking side on the JS Frameworks war. Again, all the big frameworks essentially do the samethings.
+
+The web industry should really focus on picking their battles, sure it is normal industries to have internal battles, but shouldn't we focus on some of our real porblems? see: responsive images, web literacy, load times/page size.
+
+I'm not saying that we shouldn't try to better ourselves and the web by not learning. I think that you should learn as much as possible without driving your self crazy or giving up your personal life.
+
+topics:
+- we need industry wide barriers or we will learn ourselves to death
+- rely on the people around you
+- Sure you want to be a unicorn, the go to employee at your company but why? all
+	that this accomplishes is an unrealistic bar that we will all be measured against
