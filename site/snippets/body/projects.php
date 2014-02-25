@@ -2,7 +2,7 @@
 	<h2 class="title">
 		<?php echo html($page->title()) ?>
 		<?php
-			$children = $page->children();
+			$children = $page->children()->visible();
 			echo '<span>';
 			foreach ($children as $key) {
 				echo '<a href="#'.strtolower(str_replace(' ', '_', $key->title)).'">'.$key->title.'</a>';
@@ -36,9 +36,9 @@
 						'<h5>'.$grandchild->title.'</h5>'.
 						'<p>'.$grandchild->excerpt.'</p>'.
 						'</a> </div>';
-					}
+				}
 
-			echo '<hr /></div>';
+				echo '<hr /></div>';
 			}
 		?>
 
