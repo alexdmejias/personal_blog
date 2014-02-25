@@ -20,13 +20,15 @@ $(document).on('scroll load', function(){
 });
 
 if ($('.projects-body').length) {
-    $('.title').on('click', 'a', function(e) {
-        e.preventDefault();
-        var index = $(this).index();
-        $('html, body').animate({
-        scrollTop: $('article').children('h3').eq(index).offset().top
-        }, 1000);
-    })
+    $('.title').find('a').on('click', function(e) {
+        if (!this.hasClass('external_link')) {
+            e.preventDefault();
+            var index = $(this).index();
+            $('html, body').animate({
+            scrollTop: $('article').children('h3').eq(index).offset().top
+            }, 1000);
+        }
+    });
 }
 
 /*! A fix for the iOS orientationchange zoom bug.
