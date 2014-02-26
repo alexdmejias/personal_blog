@@ -15,7 +15,7 @@
 
 			echo kirbytext($page->text());
 
-			foreach ($page->children() as $child) {
+			foreach ($children as $child) {
 
 				echo '<h3 id="'.strtolower(str_replace(' ', '_', $child->title)).'">'.$child->title.'</h3>';
 				echo kirbytext($child->text());
