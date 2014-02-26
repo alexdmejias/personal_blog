@@ -37,7 +37,43 @@ TOOLS
 	text-align: center;
 }
 
-.home-body header {       background: $green }
-.projects-body header {   background: $red }
-.blog-body header {       background: $blue_dark }
-.resume-body header {     background: $orange }
+.home-body {
+	header {
+		background: $green
+	}
+	footer {
+		a:hover path {
+			fill: $green
+		}
+	}
+}
+.projects-body {
+	header {
+		background: $red
+	}
+	footer {
+		a:hover path {
+			fill: $red
+		}
+	}
+}
+.blog-body {
+	header {
+		background: $blue_dark
+	}
+	footer {
+		a:hover path {
+			fill: $blue_dark
+		}
+	}
+}
+.resume-body {
+	header {
+		background: $orange
+	}
+	footer {
+		a:hover path {
+			fill: $orange
+		}
+	}
+}

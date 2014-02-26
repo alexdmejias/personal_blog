@@ -1,5 +1,6 @@
 		<footer class="ta_center wrap" role="contentinfo">
 
+		<?php snippet('social-icons'); ?>
 			<p>&copy; <?php echo date('Y'); ?> Alex Mejias.</p>
 
 		</footer> <?php // end footer ?>
