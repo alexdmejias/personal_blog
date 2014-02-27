@@ -12,7 +12,8 @@
 		}
 		</script>
 
-		<?php echo js('assets/js/scripts.concat.js') ?>
+
+		<?php echo js('assets/js/scripts'.$site->env_vars->js_type.'.js') ?>
 	</body>
 
 </html>
