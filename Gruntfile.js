@@ -98,14 +98,14 @@ module.exports = function(grunt) {
 			},
 			staging: {
 				options: {
-						dest: "<%= creds.path.staging %>",
-						host: "<%= creds.user %>@<%= creds.ip %>"
+					dest: "<%= creds.path.staging %>",
+					host: "<%= creds.user %>@<%= creds.ip %>"
 				}
 			},
 			prod: {
 				options: {
-						dest: "<%= creds.path.prod %>",
-						host: "<%= creds.user %>@<%= creds.ip %>"
+					dest: "<%= creds.path.prod %>",
+					host: "<%= creds.user %>@<%= creds.ip %>"
 				}
 			}
 		},
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 					livereload: false
 				},
 				files: ['<%= paths.libraryDir %>/scss/**/*.scss'],
-				tasks: ['sass', 'autoprefixer']
+				tasks: ['sass:dev', 'autoprefixer:dev']
 			},
 
 			css: {
