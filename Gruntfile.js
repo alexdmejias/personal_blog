@@ -38,6 +38,78 @@ module.exports = function(grunt) {
 			}
 		},
 
+		concat: {
+			options: {
+				separator: ';'
+			},
+
+			dist: {
+				src: ['<%= paths.libraryDir %>/js/libs/*.js', '<%= paths.libraryDir %>/js/scripts.js'],
+				dest: '<%= paths.libraryDir %>/js/scripts.concat.js'
+			}
+		},
+
+		uglify: {
+			options: {
+				report: 'min'
+			},
+			prod: {
+				files: {'<%= paths.libraryDir %>/js/scripts.min.css':'<%= paths.libraryDir %>/js/scripts.concat.js'}
+			}
+		},
+
+		sass: {
+			options: {
+				sourceComments: 'map'
+			},
+			dev: {
+				files: {
+					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
+				}
+			},
+			prod: {
+				options: {
+					outputStyle: 'compressed'
+				},
+				files: {
+					'<%= paths.libraryDir %>/css/styles.min.css':'<%= paths.libraryDir %>/scss/styles.scss'
+				}
+			}
+		},
+
+		autoprefixer: {
+			dev: {
+				src: '<%= paths.libraryDir %>/css/styles.css',
+				dest: '<%= paths.libraryDir %>/css/styles.css'
+			},
+			prod: {
+				src: '<%= paths.libraryDir %>/css/styles.min.css',
+				dest: '<%= paths.libraryDir %>/css/styles.min.css'
+			}
+		},
+
+		rsync: {
+			options: {
+				src: "./",
+				args: ["--verbose"],
+				exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json'],
+				recursive: true,
+				syncDestIgnoreExcl: true
+			},
+			staging: {
+				options: {
+						dest: "<%= creds.path.staging %>",
+						host: "<%= creds.user %>@<%= creds.ip %>"
+				}
+			},
+			prod: {
+				options: {
+						dest: "<%= creds.path.prod %>",
+						host: "<%= creds.user %>@<%= creds.ip %>"
+				}
+			}
+		},
+
 		watch: {
 			options: {
 				livereload: true
@@ -67,60 +139,11 @@ module.exports = function(grunt) {
 				files: ['<%= paths.libraryDir %>/js/**/*.js', '!<%= paths.libraryDir %>/js/scripts.concat.js'],
 				tasks: ['concat']
 			}
-		},
-
-		concat: {
-			options: {
-				separator: ';'
-			},
-
-			dist: {
-				src: ['<%= paths.libraryDir %>/js/libs/*.js', '<%= paths.libraryDir %>/js/scripts.js'],
-				dest: '<%= paths.libraryDir %>/js/scripts.concat.js'
-			}
-		},
-
-		autoprefixer: {
-			dist: {
-				src: '<%= paths.libraryDir %>/css/styles.css',
-				dest: '<%= paths.libraryDir %>/css/styles.css'
-			}
-		},
-
-		sass: {
-			options: {
-				sourceComments: 'map'
-			},
-			dist: {
-				files: {
-					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
-				}
-			}
-		},
-
-				rsync: {
-						options: {
-								src: "./",
-								args: ["--verbose"],
-								exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json'],
-								recursive: true,
-								syncDestIgnoreExcl: true
-						},
-						staging: {
-								options: {
-										dest: "<%= creds.path.staging %>",
-										host: "<%= creds.user %>@<%= creds.ip %>"
-								}
-						},
-						prod: {
-								options: {
-										dest: "<%= creds.path.prod %>",
-										host: "<%= creds.user %>@<%= creds.ip %>"
-								}
-						}
-				}
-
+		}
 	});
 
+	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'concat', 'uglify', 'responsive_images']);
+	grunt.registerTask('deploy', ['build', 'rsync:staging']);
+	grunt.registerTask('deploy_prod', ['build', 'rsync:prod']);
 	grunt.registerTask('default', ['watch']);
 };
