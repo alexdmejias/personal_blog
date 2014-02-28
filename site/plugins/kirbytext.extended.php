@@ -26,7 +26,7 @@ class kirbytextExtended extends kirbytext {
 		// define default values for attributes
 		$defaults = array(
 			'image' => '/assets/images/content/sized/'.$image,
-			'alt' => 'No description provided',
+			'alt' => '',
 		);
 
 		// merge the given parameters with the default values
@@ -34,15 +34,14 @@ class kirbytextExtended extends kirbytext {
 
 		$image_parts = explode('.', $options['image']);
 
-		$markup = '<span data-picture data-alt="'.$options['alt'].'">'.
+		$markup = '<figure><span data-picture data-alt="'.$options['alt'].'">'.
 					'<span data-src="'.$image_parts[0].'-small.'.$image_parts[1].'"></span>'.
 					'<span data-src="'.$image_parts[0].'-medium.'.$image_parts[1].'" data-media="(min-width: 400px)"></span>'.
 					'<span data-src="'.$image_parts[0].'-large.'.$image_parts[1].'" data-media="(min-width: 800px)"></span>'.
 					'<span data-src="'.$image_parts[0].'-xlarge.'.$image_parts[1].'" data-media="(min-width: 1200px)"></span>'.
-			        '<noscript>'.
-			            '<img src="'.$options['image'].'" alt="'.$options['alt'].'">'.
-			        '</noscript>'.
-				   '</span>';
+					'</span>'.
+					(!empty($options['alt']) ? '<figcaption><span>'.$options['alt'].'</span></figcaption>' : '') .
+					'</figure>';
 
 		return $markup;
 
