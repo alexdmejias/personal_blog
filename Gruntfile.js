@@ -12,6 +12,32 @@ module.exports = function(grunt) {
 		creds: grunt.file.readJSON('server_creds.json'),
 		paths: paths,
 
+		responsive_images: {
+			myTask: {
+				options: {
+					sizes: [{
+						name: 'small',
+						width: 250,
+					},{
+						name: 'medium',
+						width: 400
+					},{
+						name: "large",
+						width: 800,
+					},{
+						name: "xlarge",
+						width: 1200
+					}]
+				},
+				files: [{
+					expand: true,
+					cwd: 'assets/images/content/',
+					src: ['*.{jpg,gif,png}'],
+					dest: 'assets/images/content/sized/'
+				}]
+			}
+		},
+
 		watch: {
 			options: {
 				livereload: true
@@ -72,27 +98,27 @@ module.exports = function(grunt) {
 			}
 		},
 
-        rsync: {
-            options: {
-                src: "./",
-                args: ["--verbose"],
-                exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json'],
-                recursive: true,
-                syncDestIgnoreExcl: true
-            },
-            staging: {
-                options: {
-                    dest: "<%= creds.path.staging %>",
-                    host: "<%= creds.user %>@<%= creds.ip %>"
-                }
-            },
-            prod: {
-                options: {
-                    dest: "<%= creds.path.prod %>",
-                    host: "<%= creds.user %>@<%= creds.ip %>"
-                }
-            }
-        }
+				rsync: {
+						options: {
+								src: "./",
+								args: ["--verbose"],
+								exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json'],
+								recursive: true,
+								syncDestIgnoreExcl: true
+						},
+						staging: {
+								options: {
+										dest: "<%= creds.path.staging %>",
+										host: "<%= creds.user %>@<%= creds.ip %>"
+								}
+						},
+						prod: {
+								options: {
+										dest: "<%= creds.path.prod %>",
+										host: "<%= creds.user %>@<%= creds.ip %>"
+								}
+						}
+				}
 
 	});
 
