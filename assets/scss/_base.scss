@@ -27,7 +27,17 @@ section {
 			// margin: 0 0 0 20px;
 		}
 	}
+
+	img {
+		width: 100%;
+	}
+	figcaption {
+		font-style: italic;
+		color: $grey;
+		padding: 0 20px 0;
+	}
 }
+
 
 footer {
 	p {
