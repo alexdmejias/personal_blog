@@ -16,6 +16,20 @@ $(document).on('scroll load', function(){
     }
 });
 
+// lightbox initiation
+$('figure').on('click', 'img', function(e) {
+    e.preventDefault();
+
+    var img_parts = $(this).attr('src').split('-');
+
+    $.magnificPopup.open({
+        items: {
+            src: img_parts[0] + '-xlarge.' + img_parts[1].split('.')[1]
+        },
+        type: 'image'
+    });
+});
+
 if ($('.projects-body').length) {
     $('.title').find('a').on('click', function(e) {
         if (!$(this).hasClass('external_link')) {
