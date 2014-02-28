@@ -22,7 +22,7 @@
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
 
-	<?php echo css('assets/css/styles.css') ?>
+	<?php echo css('assets/css/styles'.$site->env_vars->css_type.'.css') ?>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
