@@ -8,6 +8,7 @@ $grey: #565656;
 $grey-light: #999;
 $grey-medium: #666;
 $grey-dark: #222;
+$slate-grey: lightslategray;
 
 // $primary-color: yellow;
 $secondary-color: #B00000;
@@ -29,51 +30,36 @@ TOOLS
 	zoom: 1;
 }
 
+@mixin button {
+	display: inline-block;
+	margin: 0 3px;
+	width: auto;
+	background: $red;
+	padding: 4px 5px 2px;
+	color: $white;
+	border-radius: 3px;
+	// font-size: 0.5em;
+	text-decoration: none;
+	line-height: 1;
+	&:hover {
+		background: $slate-grey
+	}
+}
 .clearfix {
   @include clearfix;
+}
+.button {
+  @include button;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.fz-half {
+	font-size: 0.5em;
 }
 
 .ta_center {
 	text-align: center;
-}
-
-.home-body {
-	header {
-		background: $green
-	}
-	footer {
-		a:hover path {
-			fill: $green
-		}
-	}
-}
-.projects-body {
-	header {
-		background: $red
-	}
-	footer {
-		a:hover path {
-			fill: $red
-		}
-	}
-}
-.blog-body {
-	header {
-		background: $blue_dark
-	}
-	footer {
-		a:hover path {
-			fill: $blue_dark
-		}
-	}
-}
-.resume-body {
-	header {
-		background: $orange
-	}
-	footer {
-		a:hover path {
-			fill: $orange
-		}
-	}
 }

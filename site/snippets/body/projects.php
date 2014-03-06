@@ -5,7 +5,7 @@
 			$children = $page->children()->visible();
 			echo '<span>';
 			foreach ($children as $key) {
-				echo '<a href="#'.strtolower(str_replace(' ', '_', $key->title)).'">'.$key->title.'</a>';
+				echo '<a class="button italic fz-half" href="#'.strtolower(str_replace(' ', '_', $key->title)).'">'.$key->title.'</a>';
 			}
 			echo '</span>';
 		?>
