@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	var paths = {
-		libraryDir: 'assets'
+		libraryDir: 'assets',
+		contentImages: 'assets/images/content'
 	};
 
 
@@ -12,8 +13,19 @@ module.exports = function(grunt) {
 		creds: grunt.file.readJSON('server_creds.json'),
 		paths: paths,
 
+		imagemin: {
+		    dynamic: {                         // Another target
+				files: [{
+					expand: true,
+					cwd: '<%= paths.contentImages %>/original/',
+					src: '**/*.{jpg,png}',
+					dest: '<%= paths.contentImages %>/compressed/'
+				}]
+		    }
+		},
+
 		responsive_images: {
-			myTask: {
+			dist: {
 				options: {
 					sizes: [{
 						name: 'small',
@@ -31,9 +43,9 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: 'assets/images/content/',
-					src: ['*.{jpg,gif,png}'],
-					dest: 'assets/images/content/sized/'
+					cwd: '<%= paths.contentImages %>/compressed/',
+					src: '**/*.{jpg,png}',
+					dest: '<%= paths.contentImages %>/sized/'
 				}]
 			}
 		},
@@ -92,7 +104,7 @@ module.exports = function(grunt) {
 			options: {
 				src: "./",
 				args: ["--verbose"],
-				exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json'],
+				exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json', 'content'],
 				recursive: true,
 				syncDestIgnoreExcl: true
 			},
@@ -106,6 +118,20 @@ module.exports = function(grunt) {
 				options: {
 					dest: "<%= creds.path.prod %>",
 					host: "<%= creds.user %>@<%= creds.ip %>"
+				}
+			},
+			staging_content: {
+				options: {
+					dest: "<%= creds.path.staging %>",
+					host: "<%= creds.user %>@<%= creds.ip %>",
+					include: ['content']
+				}
+			},
+			prod_content: {
+				options: {
+					dest: "<%= creds.path.prod %>",
+					host: "<%= creds.user %>@<%= creds.ip %>",
+					include: ['content']
 				}
 			}
 		},
@@ -142,8 +168,10 @@ module.exports = function(grunt) {
 		}
 	});
 
+	grunt.registerTask('images', ['imagemin', 'responsive_images']);
 	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'concat', 'uglify', 'responsive_images']);
 	grunt.registerTask('deploy', ['build', 'rsync:staging']);
 	grunt.registerTask('deploy_prod', ['build', 'rsync:prod']);
+	grunt.registerTask('content', ['rsync:staging_content', 'rsync:prod_content']);
 	grunt.registerTask('default', ['watch']);
 };
