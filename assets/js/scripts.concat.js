@@ -1502,14 +1502,16 @@ $(document).on('scroll load', function(){
 });
 
 // lightbox initiation
-$('figure').on('click', 'img', function(e) {
+$('figure').on('click.magnific', 'img', function(e) {
     e.preventDefault();
 
     var img_parts = $(this).attr('src').split('-');
+    var img_ext = img_parts[img_parts.length - 1][1]
+    img_parts[img_parts - 1] = '-xlarge.' + img_ext;
 
     $.magnificPopup.open({
         items: {
-            src: img_parts[0] + '-xlarge.' + img_parts[1].split('.')[1]
+            src: img_parts.join('-')
         },
         type: 'image'
     });
