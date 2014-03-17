@@ -1,7 +1,32 @@
 Title: Levistrauss
 ----
-Text:
-----
 Template: project
 ----
-Url: http://google.com
+Thumbnail: assets/images/thumbnails/lsco-thumbnail.jpg
+----
+Url: http://www.levistrauss.com/
+----
+Excerpt: Levistrauss.com redesign
+----
+Text:
+
+Recently I had the opportunity to work on the relaunch of the new levistrauss.com. Compared to other sites that I had previously worked on, this was at least four times the size of the smaller blogs that I was accustomed to working on.
+
+(resimage: lsco/lsco-home-desktop.jpg alt: Homepage of the new Levisstrauss.com)
+
+There were a few problems that our team team had to handle. Some of the issues in which I played a major role were:
+
+1. Flatten the overall site structure
+2. Have a site architecture that was easily extensible
+3. Work with two off-site freelances
+
+
+##Flatten/the/structure/please
+
+Levi's old site had a massive site structure. It was very difficult to navigate and actually find what you were looking for. As far as I know, the complicated site structure was a major client request. To be honest, at first, it was really hard to wrap your head around the complexity of the site and where each page went. Luckily for us, for the first time, we were able to work with a full time UX person. Our UX person was able to flatten the structure of the old site while maintaining all the core pages, with the only downside being that some pages would have to house _a lot_ of content.
+
+After the site structure was completed, it was up to the dev team to find a solution for this problem. Since one of the goals of the project was to make the site fairly easy to edit, we didn't just want to make a new WP for each of the core pages. Having very long pages had a big potential for the editors to accidently introduce an error on a page and therefore break one of the main site pages. Having massive pages also locked us in a very regid structure.
+
+After some deliveration we ended up with a solution that involved having the core pages act as shells that were populated by its child pages. Ultimately each core page runs a loop that fetches all its child pages in the same order that was specified in the backend. By limiting the  loop to go only one level deep we were able to reproduce the same effect with 2nd level pages showing their pages (3rd level) without having long pages. For even more control over the presentation, I added the ability to exclude pages from their parent loop.
+
+(resimage: lsco/lsco-backend-4-desktop.jpg alt: You can hide the whole page or just the title)

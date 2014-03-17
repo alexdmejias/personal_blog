@@ -1,5 +1,5 @@
 Title: Projects
 ----
-Text: Some of my recent personal and work project, sideprojects and experiments
+Text: Coming Soon!
 ----
 Template: projects
