@@ -5,9 +5,12 @@ header {
 	align-items: center;
 	flex-direction: column;
 	transition: all 0.5s;
-	// box-shadow: -1px 6px 14px rgba($black, 0.35);
 	z-index: 99;
 	background: lightslategray;
+
+	&:hover {
+		opacity: 1 !important;
+	}
 
 	a {
 		text-decoration: none;
