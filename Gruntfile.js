@@ -104,34 +104,36 @@ module.exports = function(grunt) {
 			options: {
 				src: "./",
 				args: ["--verbose"],
-				exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'server_creds.json', 'content'],
-				recursive: true,
-				syncDestIgnoreExcl: true
+				recursive: true
 			},
 			staging: {
 				options: {
+					exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json',
+							'.DS_Store', 'README.md', 'server_creds.json', 'content/01-projects/*', '!content/01-projects/projects.txt'],
 					dest: "<%= creds.path.staging %>",
 					host: "<%= creds.user %>@<%= creds.ip %>"
 				}
 			},
 			prod: {
 				options: {
+					exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json',
+							'.DS_Store', 'README.md', 'server_creds.json', 'content/01-projects/*', '!content/01-projects/projects.txt'],
 					dest: "<%= creds.path.prod %>",
 					host: "<%= creds.user %>@<%= creds.ip %>"
 				}
 			},
 			staging_content: {
 				options: {
+					src: './content',
 					dest: "<%= creds.path.staging %>",
 					host: "<%= creds.user %>@<%= creds.ip %>",
-					include: ['content']
 				}
 			},
 			prod_content: {
 				options: {
+					src: './content',
 					dest: "<%= creds.path.prod %>",
 					host: "<%= creds.user %>@<%= creds.ip %>",
-					include: ['content']
 				}
 			}
 		},
