@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 				report: 'min'
 			},
 			prod: {
-				files: {'<%= paths.libraryDir %>/js/scripts.min.css':'<%= paths.libraryDir %>/js/scripts.concat.js'}
+				files: {'<%= paths.libraryDir %>/js/scripts.min.js':'<%= paths.libraryDir %>/js/scripts.concat.js'}
 			}
 		},
 
