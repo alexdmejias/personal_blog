@@ -1,5 +1,5 @@
 Title: Projects
 ----
-Text: Coming Soon!
+Text:
 ----
 Template: projects

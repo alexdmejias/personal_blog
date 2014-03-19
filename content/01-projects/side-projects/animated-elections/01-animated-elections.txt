@@ -1,7 +1,0 @@
-Title: Animated Elections
-----
-Excerpt: this is the excerpt5
-----
-Featured_thumbnail: hi.png
-----
-Text: thisis the text

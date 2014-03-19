@@ -1,0 +1,18 @@
+Title: Pocket Stats
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/cdnatives-thumbnail.png
+----
+Url: http://www.levistrauss.com/
+----
+Github: http://google.com
+----
+Excerpt: JS CDNs Directory
+----
+Text:
+Curious about how much I was falling behind in my Pocket reading list, I decided to graph the amount of articles in it.
+
+Right now, the project is built on D3 and Laravel. By running a cron job every 5 minutes, I can query the Pocket servers and compare them against the last entry made, if the two numbers are different, a new entry will be created, thus adding a new point to the graph.
+
+The project is still in development but when completed it should have a nicer graph that contains more information and allow other users to register and start tracking their own progress.
