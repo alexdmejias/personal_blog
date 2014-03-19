@@ -14,14 +14,22 @@ module.exports = function(grunt) {
 		paths: paths,
 
 		imagemin: {
-		    dynamic: {                         // Another target
+			content: {
 				files: [{
 					expand: true,
 					cwd: '<%= paths.contentImages %>/original/',
 					src: '**/*.{jpg,png}',
 					dest: '<%= paths.contentImages %>/compressed/'
 				}]
-		    }
+			},
+			thumbnails: {
+				files: [{
+					expand: true,
+					cwd: 'assets/images/thumbnails/',
+					src: '**/*.{jpg,png}',
+					dest: 'assets/images/thumbnails/'
+				}]
+			}
 		},
 
 		responsive_images: {
@@ -71,9 +79,6 @@ module.exports = function(grunt) {
 		},
 
 		sass: {
-			options: {
-				sourceComments: 'map'
-			},
 			dev: {
 				files: {
 					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
@@ -81,6 +86,7 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
+					sourceComments: 'map',
 					outputStyle: 'compressed'
 				},
 				files: {
