@@ -3,11 +3,6 @@
 		<?php echo html($page->title()) ?>
 		<?php
 			$children = $page->children()->visible();
-			echo '<span>';
-			foreach ($children as $key) {
-				echo '<a class="button italic fz-half" href="#'.strtolower(str_replace(' ', '_', $key->title)).'">'.$key->title.'</a>';
-			}
-			echo '</span>';
 		?>
 	</h2>
 	<article>
