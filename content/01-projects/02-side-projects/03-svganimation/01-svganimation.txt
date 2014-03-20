@@ -1,0 +1,17 @@
+Title: SVGAnimation
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/svganimation.png
+----
+Url: http://labs.alexdmejias.com/svganimation/
+----
+Github: https://github.com/amejias101/svganimation
+----
+Excerpt: Series of SVG Experiments
+----
+Text:
+
+Under Heavy Development!
+
+A series of small experiments revolving around the capibilities of SVG in the web and how they could be adapted towards a more modern web.

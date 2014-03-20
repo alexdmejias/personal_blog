@@ -2,7 +2,7 @@ Title: Levistrauss.com
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/lsco-thumbnail.jpg
+Thumbnail: assets/images/thumbnails/lsco.jpg
 ----
 Url: http://www.levistrauss.com/
 ----

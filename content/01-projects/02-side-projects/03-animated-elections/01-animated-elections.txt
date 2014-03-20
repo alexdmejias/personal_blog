@@ -1,9 +1,0 @@
-Title: Animated Elections
-----
-Template: project
-----
-Thumbnail: assets/images/thumbnails/animted-elections-thumbnail.png
-----
-Url: http://www.levistrauss.com/
-----
-Excerpt: Exploring State Colors

@@ -1,0 +1,14 @@
+Title: Idea Generator
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/idea-generator.jpg
+----
+Url: http://labs.alexdmejias.com/idea-gen/
+----
+Github: https://github.com/amejias101/idea-gen
+----
+Excerpt: Simple Idea Generator
+----
+Text:
+
