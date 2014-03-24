@@ -38,8 +38,10 @@ section {
 		padding: 0 20px 0;
 	}
 
-	a, a:visited {
-		color: $red;
+	article {
+		a, a:visited {
+			color: $red;
+		}
 	}
 }
 
