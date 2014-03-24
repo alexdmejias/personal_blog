@@ -1,7 +1,9 @@
 .resume-body {
+	.personal_info {
+		display: none;
+	}
 
-	article h2 {
-		text-decoration: underline;
+	h3, h4 {
 		font-size: 0.95em;
 		font-weight: bold;
 	}
@@ -11,63 +13,94 @@
 		clear: both;
 		float: none;
 	}
-	hr {
-		border: 0;
-		border-bottom: 1px solid $white;
-		width: 1px;
-		transition: all 0.5s;
-	}
 
-	h3 {
-		font-size: 0.95em;
+	h4 {
 		margin: 4px 0 0;
-		text-decoration: none;
 	}
 
-	@media screen and (min-width: 800px) {
-		article h2, h3 { font-size: 1.1em;}
-		p { font-size: 1em;}
-		.row {
-			@include clearfix;
-			overflow: hidden;
-			& > h2, & > div {
-				float: left;
-				width: 20%;
-			}
-			& > div {
-				width: 80%;
-				margin-top: 10px;
+	@media all and (min-width: 700px) {
+ 		h3, h4, p {
+			font-size: 1.1em;
+		}
+
+		h3 {
+			float: left;
+			width: 20%;
+		}
+
+		h3 + div {
+			width: 80%;
+			float: left;
+		}
+
+		h4 {
+			display: inline-block;
+			width: 60%;
+			float: left;
+			&:nth-child(even) {
+				width: 40%;
+				text-align: right
 			}
 		}
-		div {
-			& > div {
-				div {
-					padding: 0 0 0 15px;
 
-					h3 {
-						display: inline-block;
-						float:left;
-						&:nth-child(even) {
-							float: right;
-						}
-						&:last-of-type {
-							width: 100%;
-						}
-					}
+		.experience {
+			margin-top: 12px
+		}
 
-					p:first-child {
-						margin: 6px 0 0;
-					}
+	}
 
 
-					&:hover {
-						hr {
-							width: 10%;
-							border-bottom-color: #eee;
-						}
-					}
-				}
+	@media print {
+		.personal_info {
+			display: block;
+			width: 100%;
+			h3 {
+				width: auto;
+				text-decoration: none;
+			}
+		}
+
+		header, h2, footer {
+			display: none;
+		}
+
+		h3, h4, p {
+			font-size: .9em;
+			line-height: 1.35em;
+		}
+
+		h3 {
+			float: left;
+			width: 20%;
+		}
+
+		h3 + div {
+			width: 80%;
+			float: left;
+		}
+
+		h4 {
+			display: inline-block;
+			width: 65%;
+			float: left;
+			line-height: 1em;
+			&:nth-child(even) {
+				width: 35%;
+				text-align: right
+			}
+		}
+
+		.experience {
+			margin-top: 12px
+		}
+	}
+	@media all and (min-width: 1000px) {
+		h4 {
+			width: 60%;
+			&:nth-child(even) {
+				width: 40%;
 			}
 		}
 	}
+
 }

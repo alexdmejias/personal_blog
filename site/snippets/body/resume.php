@@ -3,11 +3,11 @@
 
 	<article class="clearfix">
 		<div class="personal_info clearfix">
-			<h2>
+			<h3>
 				Alex Mejias<br>
-				alexdmejias@gmail.com<br>
+				alex@alexdmejias.com<br>
 				(516) 748 - 6801
-			</h2>
+			</h3>
 		</div>
 		<?php echo kirbytext($page->text()) ?>
 	</article>
