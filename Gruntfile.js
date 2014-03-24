@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 module.exports = function(grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
@@ -42,10 +42,10 @@ module.exports = function(grunt) {
 						name: 'medium',
 						width: 400
 					},{
-						name: "large",
+						name: 'large',
 						width: 800,
 					},{
-						name: "xlarge",
+						name: 'xlarge',
 						width: 1200
 					}]
 				},
@@ -108,38 +108,40 @@ module.exports = function(grunt) {
 
 		rsync: {
 			options: {
-				src: "./",
-				args: ["--verbose"],
+				src: './',
+				args: ['--verbose'],
 				recursive: true
 			},
 			staging: {
 				options: {
 					exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json',
-							'.DS_Store', 'README.md', 'server_creds.json', 'content/01-projects/*', '!content/01-projects/projects.txt'],
-					dest: "<%= creds.path.staging %>",
-					host: "<%= creds.user %>@<%= creds.ip %>"
+							'.DS_Store', 'README.md', 'server_creds.json', 'content'],
+					dest: '<%= creds.path.staging %>',
+					host: '<%= creds.user %>@<%= creds.ip %>'
 				}
 			},
 			prod: {
 				options: {
 					exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json',
 							'.DS_Store', 'README.md', 'server_creds.json', 'content/01-projects/*', '!content/01-projects/projects.txt'],
-					dest: "<%= creds.path.prod %>",
-					host: "<%= creds.user %>@<%= creds.ip %>"
+					dest: '<%= creds.path.prod %>',
+					host: '<%= creds.user %>@<%= creds.ip %>'
 				}
 			},
 			staging_content: {
 				options: {
+					syncDest: true,
 					src: './content',
-					dest: "<%= creds.path.staging %>",
-					host: "<%= creds.user %>@<%= creds.ip %>",
+					dest: '<%= creds.path.staging %>',
+					host: '<%= creds.user %>@<%= creds.ip %>',
 				}
 			},
 			prod_content: {
 				options: {
+					syncDest: true,
 					src: './content',
-					dest: "<%= creds.path.prod %>",
-					host: "<%= creds.user %>@<%= creds.ip %>",
+					dest: '<%= creds.path.prod %>',
+					host: '<%= creds.user %>@<%= creds.ip %>',
 				}
 			}
 		},
