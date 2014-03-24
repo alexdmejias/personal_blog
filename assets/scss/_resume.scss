@@ -47,6 +47,19 @@
 			margin-top: 12px
 		}
 
+		.row {
+			@include clearfix;
+			&:last-child {
+				p {
+					font-size: 0.9em;
+					text-align: center;
+					margin: 40px 0 0;
+				}
+			}
+		}
+
+
+
 	}
 
 
