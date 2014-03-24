@@ -10,6 +10,8 @@ class kirbytextExtended extends kirbytext {
 		$this->addTags('resimage');
 		$this->addAttributes('alt');
 
+		$this->addTags('image');
+
 	}
 
 	function resimage($params) {
@@ -45,6 +47,13 @@ class kirbytextExtended extends kirbytext {
 
 		return $markup;
 
+	}
+
+	function image($params) {
+
+		$image = $params['image'];
+
+		return '<img src="'.$image.'" alt="" />';
 	}
 }
 
