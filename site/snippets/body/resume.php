@@ -6,7 +6,9 @@
 			<h3>
 				Alex Mejias<br>
 				alex@alexdmejias.com<br>
-				(516) 748 - 6801
+				(516) 748 - 6801<br>
+				alexdmejias.com<br>
+				github.com/amejias101
 			</h3>
 		</div>
 		<?php echo kirbytext($page->text()) ?>
