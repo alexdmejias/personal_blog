@@ -1,0 +1,22 @@
+Title: Pocket Stats
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/pocket-stats.jpg
+----
+Url: http://pocket.alexdmejias.com/
+----
+Github: https://github.com/amejias101/pocket-analytics
+----
+Excerpt: Keeping Track of My Pocket Queue
+----
+Text:
+Under Heavy Development.
+
+Curious about how much I was falling behind in my (link:https://getpocket.com/about/ text:Pocket) reading list, I decided to graph the amount of articles in it.
+
+Right now, the project is built on D3 and Laravel. Through the use of a cron job, the application can query the Pocket servers and compare them against the last entry made, if the two numbers are different, and through my RESTful api I can add and control existing points.
+
+The project is still in development, but when completed it should have a nicer graph that contains more information, use AngularJS, and allow other users to track their own progress.
+
+(resimage: pocket-stats/overview.jpg)

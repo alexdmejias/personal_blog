@@ -1,7 +1,0 @@
-Title: Experiments
-----
-Excerpt: this is the excerpt4
-----
-Featured_thumbnail: hi.png
-----
-Text: thisis the text

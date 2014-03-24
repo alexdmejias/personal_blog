@@ -16,8 +16,7 @@ Text:
 #### March. '13 - Feb. '14
 #### Web Developer
 
-Primarily worked maintaining a news and reviews website, implementing new features and layouts using HTML, jQuery, Sass and CakePHP. Also involved in coding HTML email newsletters and features for outside clients.
-
+Worked on the creation and maintance of websites for Levis Strauss, KKR, Target, NCTA and others. Set forth changes for better build processes and development servers. Led efforts on project modularlization.
 
 </div>
 
@@ -45,22 +44,22 @@ Coordinated between professors and graphic design students to participate in the
 
 <div markdown="1">
 
-#### Control Electropolishing Corp.
-#### Jul. '11 - Sept. '11
-#### Freelance Web Designer & Developer
+#### OPT Central - Manhattan, NY
+#### March '12 - May '12
+#### Assistant Organizer
 
-Solely developed the entire website based on the inputs of the client. After various revisions the website was completed and the customer was extremely satisfied with the finished product.
+Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and jQuery.
 
 
 </div>
 
 <div markdown="1">
 
-#### OPT Central - Manhattan, NY
-#### March '12 - May '12
-#### Assistant Organizer
+#### Control Electropolishing Corp.
+#### Jul. '11 - Sept. '11
+#### Freelance Web Designer & Developer
 
-Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and jQuery.
+Solely developed the entire website based on the inputs of the client. After various revisions the website was completed and the customer was extremely satisfied with the finished product.
 
 
 </div>
@@ -102,5 +101,11 @@ September 2008 - June 2012
 </div>
 
 </div>
+
+</div>
+
+<div class="row" markdown="1">
+
+Links of websites I have worked for can be found at (link:/projects text:alexdmejias.com/projects)
 
 </div>

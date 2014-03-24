@@ -1,0 +1,19 @@
+Title: Animated Elections
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/animted-elections.jpg
+----
+Url: http://labs.alexdmejias.com/animated-elections/
+----
+Github: https://github.com/amejias101/animated-elections
+----
+Excerpt: Exploring State Colors
+----
+Text:
+
+(image: /assets/images/content/original/animted-elections/capture.gif)
+
+A simplified version of the outcomes of the Presidential Elections overtime. Even though some of the data has been slightly modified to better suit the format of the visualization, this application helps us better understand how the country has changed over time, even if the values of each party have also changed with time. As someone who is interested in history, I find that it is interesting to see how the country voted during the (link:http://labs.alexdmejias.com/animated-elections/#year/1860 text:Civil War), (link:http://labs.alexdmejias.com/animated-elections/#year/1912 text:WWI) and (link:http://labs.alexdmejias.com/animated-elections/#year/1944 text:WWII)
+
+On the technical side, the project was made using Backbone.js, jQuery UI, CoffeeScript, and (link:http://intridea.github.io/stately/ text:Stately) (where the inspiration for this project originally came from). Each election is a Backbone view and the application as a whole is a collection view. All the data for this project can easily be modiefied since it is all contained in a local JSON file, since there is no api that contains all of this information.

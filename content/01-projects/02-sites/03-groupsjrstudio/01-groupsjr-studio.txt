@@ -1,0 +1,13 @@
+Title: Group SJR Studio
+----
+Template: project
+----
+Thumbnail: assets/images/thumbnails/groupsjr-studio.jpg
+----
+Url: http://groupsjr.com/studio/
+----
+Text:
+### Project notes:
+* Internal site used to showcase the work done by the Studio department of Group SJR
+* Sole developer
+* Built on the Kirby CMS
