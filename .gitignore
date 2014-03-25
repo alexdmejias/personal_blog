@@ -8,4 +8,4 @@ node_modules/
 .sass-cache/
 server_creds.json
 site/config/config.php
-assets/images/content
+assets/images
