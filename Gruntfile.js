@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	var paths = {
@@ -38,13 +38,13 @@ module.exports = function(grunt) {
 					sizes: [{
 						name: 'small',
 						width: 250,
-					},{
+					}, {
 						name: 'medium',
 						width: 400
-					},{
+					}, {
 						name: 'large',
 						width: 800,
-					},{
+					}, {
 						name: 'xlarge',
 						width: 1200
 					}]
@@ -74,14 +74,14 @@ module.exports = function(grunt) {
 				report: 'min'
 			},
 			prod: {
-				files: {'<%= paths.libraryDir %>/js/scripts.min.js':'<%= paths.libraryDir %>/js/scripts.concat.js'}
+				files: {'<%= paths.libraryDir %>/js/scripts.min.js': '<%= paths.libraryDir %>/js/scripts.concat.js'}
 			}
 		},
 
 		sass: {
 			dev: {
 				files: {
-					'<%= paths.libraryDir %>/css/styles.css':'<%= paths.libraryDir %>/scss/styles.scss'
+					'<%= paths.libraryDir %>/css/styles.css': '<%= paths.libraryDir %>/scss/styles.scss'
 				}
 			},
 			prod: {
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
 					outputStyle: 'compressed'
 				},
 				files: {
-					'<%= paths.libraryDir %>/css/styles.min.css':'<%= paths.libraryDir %>/scss/styles.scss'
+					'<%= paths.libraryDir %>/css/styles.min.css': '<%= paths.libraryDir %>/scss/styles.scss'
 				}
 			}
 		},
