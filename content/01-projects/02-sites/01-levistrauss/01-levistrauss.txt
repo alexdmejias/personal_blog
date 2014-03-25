@@ -30,3 +30,5 @@ After the site structure was completed, it was up to the development team to fin
 After some deliberation we ended up with a solution that involved having the core pages act as shells that were populated by its child pages. Ultimately each core page runs a loop that fetches all its child pages in the same order that was specified in the backend. By limiting the  loop to go only one level deep we were able to reproduce the same effect with 2nd level pages showing their pages (3rd level) without having long pages. For even more control over the presentation, I added the ability to exclude pages from their parent loop.
 
 (resimage: lsco/lsco-backend-4-desktop.jpg alt: You can hide the whole page or just the title)
+
+_to be continued..._

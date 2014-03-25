@@ -13,3 +13,5 @@ Excerpt: Simple Idea Generator
 Text:
 
 A now aging side project. Idea Generator was born as both a necessity to have a side project, get more side projects and to get my feet wet with OOP JS.
+
+(resimage: idea-generator/overview.png)

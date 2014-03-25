@@ -17,3 +17,8 @@ Under Heavy Development!
 An ongoing series of small experiments revolving around the capabilities of SVG on the web and how it could be harnessed for something other than just images. You can view a simple set of goals in the projects (link: https://github.com/amejias101/SVGEXP/blob/master/README.md text: Readme file).
 
 Built with (link:http://svgjs.com/ text:svg.js) and Require.js. Due to the way that this experiment works, it was asking to get modularized. Out of the major SVG libraries out there, I chose svg.js due to the fact that I mainly needed an SVG wrapper and not all the other features that the other libraries like (link: http://jonobr1.github.io/two.js/ text:two.js) or (link:http://snapsvg.io/ text:snap.svg) offer. I chose Require.js because of my familiarity‎ with it, but I might switch to Browserify due to its syntax and ease of use.
+
+(resimage: svgexp/sn1.png)
+(resimage: svgexp/sn2.png)
+(resimage: svgexp/sn3.png)
+(resimage: svgexp/sn4.png)
