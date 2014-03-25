@@ -215,7 +215,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('images', ['imagemin', 'responsive_images']);
 	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'file_append', 'concat', 'uglify', 'responsive_images']);
 	grunt.registerTask('deploy', ['build', 'rsync:staging']);
-	grunt.registerTask('deploy_prod', ['build', 'rsync:prod']);
+	grunt.registerTask('deploy_prod', ['build', 'aws_s3', 'rsync:prod']);
 	grunt.registerTask('content', ['rsync:staging_content', 'rsync:prod_content']);
 	grunt.registerTask('default', ['watch']);
 };
