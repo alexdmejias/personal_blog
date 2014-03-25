@@ -16,7 +16,7 @@ Text:
 #### March. '13 - Feb. '14
 #### Web Developer
 
-Worked on the creation and maintance of websites for Levis Strauss, KKR, Target, NCTA and others. Set forth changes for better build processes and development servers. Led efforts on project modularlization.
+Worked on the development and maintenance of websites for Levis Strauss, KKR, Target, NCTA and others. Set forth changes for better build processes and development servers. Led efforts on project modularization. Some of the technologies I used were Wordpress, Sass, Grunt, jQuery, EC2, and PHP.
 
 </div>
 

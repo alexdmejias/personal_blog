@@ -50,16 +50,13 @@
 		.row {
 			@include clearfix;
 			&:last-child {
+				width: 100%;
 				p {
 					font-size: 0.9em;
-					text-align: center;
 					margin: 40px 0 0;
 				}
 			}
 		}
-
-
-
 	}
 
 
@@ -78,7 +75,7 @@
 		}
 
 		h3, h4, p {
-			font-size: .9em;
+			font-size: .8em;
 			line-height: 1.35em;
 		}
 
@@ -103,8 +100,10 @@
 			}
 		}
 
-		.experience {
-			margin-top: 12px
+		.row {
+			&:last-child {
+				text-align: center;
+			}
 		}
 	}
 	@media all and (min-width: 1000px) {

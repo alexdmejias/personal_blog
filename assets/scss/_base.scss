@@ -1,5 +1,5 @@
 *, *:before, *:after {
-	box-sizing:         border-box;
+	box-sizing: border-box;
 }
 /*********************
 GENERAL STYLES
@@ -23,10 +23,6 @@ section {
 		width: 100%;
 		display: block;
 		margin: 0;
-
-		&:nth-child(even) {
-			// margin: 0 0 0 20px;
-		}
 	}
 
 	img {
@@ -38,7 +34,7 @@ section {
 		padding: 0 20px 0;
 	}
 
-	article {
+	article, ul {
 		a, a:visited {
 			color: $red;
 		}
