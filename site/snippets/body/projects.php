@@ -19,7 +19,7 @@
 
 				foreach ($child->children()->visible() as $grandchild) {
 					echo
-						'<div class="project" style="background-image:url('. $grandchild->thumbnail .')" ><a href="'. $grandchild->url() .'"> '.
+						'<div class="project" style="background-image:url('. $site->env_vars->assets_url. '/images' . $grandchild->thumbnail .')" ><a href="'. $grandchild->url() .'"> '.
 						'<h5>'.$grandchild->title.'</h5>'.
 						'<p>'.$grandchild->excerpt.'</p>'.
 						'</a> </div>';

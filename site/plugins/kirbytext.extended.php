@@ -25,9 +25,13 @@ class kirbytextExtended extends kirbytext {
 
 		$image = $params['resimage'];
 
+		// grab the assets url from the enviroments array
+		global $site;
+		$assets_url = $site->env_vars->assets_url;
 		// define default values for attributes
+
 		$defaults = array(
-			'image' => '/assets/images/content/sized/'.$image,
+			'image' => $assets_url.'/images/content/sized/'.$image,
 			'alt' => '',
 		);
 
@@ -51,9 +55,12 @@ class kirbytextExtended extends kirbytext {
 
 	function image($params) {
 
+		global $site;
+		$assets_url = $site->env_vars->assets_url;
+
 		$image = $params['image'];
 
-		return '<img src="'.$image.'" alt="" />';
+		return '<img src="'.$assets_url. '/images' . $image.'" alt="" />';
 	}
 }
 
