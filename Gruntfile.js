@@ -71,7 +71,8 @@ module.exports = function (grunt) {
 
 		uglify: {
 			options: {
-				report: 'min'
+				report: 'min',
+				banner: '/* <%= grunt.template.today("yyyy-mm-dd, h:MM:ss TT") %> */\n'
 			},
 			prod: {
 				files: {'<%= paths.libraryDir %>/js/scripts.min.js': '<%= paths.libraryDir %>/js/scripts.concat.js'}
@@ -103,6 +104,16 @@ module.exports = function (grunt) {
 			prod: {
 				src: '<%= paths.libraryDir %>/css/styles.min.css',
 				dest: '<%= paths.libraryDir %>/css/styles.min.css'
+			}
+		},
+
+		file_append: {
+			default_options: {
+				files: {
+					'assets/css/styles.min.css': {
+						prepend: '/*<%= grunt.template.today("yyyy-mm-dd, h:MM:ss TT") %> */\n',
+					}
+				}
 			}
 		},
 
@@ -175,11 +186,34 @@ module.exports = function (grunt) {
 				files: ['<%= paths.libraryDir %>/js/**/*.js', '!<%= paths.libraryDir %>/js/scripts.concat.js'],
 				tasks: ['concat']
 			}
+		},
+
+		aws_s3: {
+			options: {
+				accessKeyId: '<%= creds.aws.key %>', // Use the variables
+				secretAccessKey: '<%= creds.aws.secret %>', // You can also use env variables
+				uploadConcurrency: 5, // 5 simultaneous uploads
+				downloadConcurrency: 5 // 5 simultaneous downloads
+			},
+			prod: {
+				options: {
+					bucket: '<%= creds.aws.bucket %>',
+					differential: true // Only uploads the files that have changed
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'assets/',
+						src: ['css/styles.min.css', 'images/**', 'js/libs/**', 'js/jquery*', 'js/scripts.min.js'],
+						dest: 'alexdmejias.com/assets/'
+					}
+				]
+			}
 		}
 	});
 
 	grunt.registerTask('images', ['imagemin', 'responsive_images']);
-	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'concat', 'uglify', 'responsive_images']);
+	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'file_append', 'concat', 'uglify', 'responsive_images']);
 	grunt.registerTask('deploy', ['build', 'rsync:staging']);
 	grunt.registerTask('deploy_prod', ['build', 'rsync:prod']);
 	grunt.registerTask('content', ['rsync:staging_content', 'rsync:prod_content']);
