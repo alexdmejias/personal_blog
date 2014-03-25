@@ -2,7 +2,7 @@ Title: Pocket Stats
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/pocket-stats.jpg
+Thumbnail: /thumbnails/pocket-stats.jpg
 ----
 Url: http://pocket.alexdmejias.com/
 ----

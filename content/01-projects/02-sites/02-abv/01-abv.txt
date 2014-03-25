@@ -2,7 +2,7 @@ Title: A Bullseye View
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/abv.jpg
+Thumbnail: /thumbnails/abv.jpg
 ----
 Url: http://www.abullseyeview.com/
 ----
@@ -10,7 +10,8 @@ Excerpt: Target
 ----
 Text:
 
-### Some of my roles in this project:
-* Responsible for about half of the overall developemnt of it.
-* Built and helped plan extensible tile system used throughout the site
-* Worked on code and server maintance of it.
+Some of my roles in this project:
+
+- Responsible for about half of the overall developemnt of it.
+- Built and helped plan extensible tile system used throughout the site
+- Worked on code and server maintance of it.

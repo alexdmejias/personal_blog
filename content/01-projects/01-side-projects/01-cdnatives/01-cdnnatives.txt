@@ -2,7 +2,7 @@ Title: CDNatives
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/cdnatives.jpg
+Thumbnail: /thumbnails/cdnatives.jpg
 ----
 Url: http://labs.alexdmejias.com/cdnatives/
 ----

@@ -2,7 +2,7 @@ Title: Digitization in Europe
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/kkr.jpg
+Thumbnail: /thumbnails/kkr.jpg
 ----
 Url: http://www.lousch.net/kkr/digitization/
 ----
@@ -10,7 +10,7 @@ Excerpt: Exploring Long Form for KKR
 ----
 Text:
 
-### Some of my roles in this project:
-* Sole developer
-* Built various modules that could easily be used by the editor
+Some of my roles in this project:
 
+- Sole developer
+- Built various modules that could easily be used by the editor

@@ -2,7 +2,7 @@ Title: Idea Generator
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/idea-generator.jpg
+Thumbnail: /thumbnails/idea-generator.jpg
 ----
 Url: http://labs.alexdmejias.com/idea-gen/
 ----

@@ -2,7 +2,7 @@ Title: SVGEXP
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/svganimation.png
+Thumbnail: /thumbnails/svganimation.png
 ----
 Url: http://labs.alexdmejias.com/svgexp/
 ----

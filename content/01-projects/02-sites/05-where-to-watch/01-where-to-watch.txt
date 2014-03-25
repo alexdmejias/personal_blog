@@ -2,7 +2,7 @@ Title: Where to Watch
 ----
 Template: project
 ----
-Thumbnail: assets/images/thumbnails/where-to-watch.png
+Thumbnail: /thumbnails/where-to-watch.png
 ----
 Url: http://wheretowatch.org/
 ----
@@ -10,6 +10,7 @@ Excerpt: Small web app
 ----
 Text:
 
-### Project notes:
-* Directory for websites that leagally stream Movies and TV shows
-* Specially made for mobile devices
+Project notes:
+
+- Directory for websites that leagally stream Movies and TV shows
+- Specially made for mobile devices
