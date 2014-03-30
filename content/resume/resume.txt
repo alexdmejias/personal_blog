@@ -22,7 +22,7 @@ Worked on the development and maintenance of websites for Levis Strauss, KKR, Ta
 
 <div markdown="1">
 
-#### AD:60 - Brooklyn, NY
+#### AD:60
 #### Sept. '12 - Jan. '13
 #### Junior Web Developer
 
@@ -33,7 +33,7 @@ Primarily worked maintaining a news and reviews website, implementing new featur
 
 <div markdown="1">
 
-#### (UN) Common Visions - Queens, NY
+#### (UN) Common Visions
 #### March '12 - May '12
 #### Assistant Organizer
 
@@ -44,9 +44,9 @@ Coordinated between professors and graphic design students to participate in the
 
 <div markdown="1">
 
-#### OPT Central - Manhattan, NY
+#### OPT Central
 #### March '12 - May '12
-#### Assistant Organizer
+#### Junior Web Developer
 
 Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and jQuery.
 
@@ -101,11 +101,5 @@ September 2008 - June 2012
 </div>
 
 </div>
-
-</div>
-
-<div class="row" markdown="1">
-
-Links of websites I have worked for can be found at (link:/projects text:alexdmejias.com/projects)
 
 </div>
