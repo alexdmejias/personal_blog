@@ -1,6 +1,6 @@
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-$special:			$serif;
+$special:			'Oswald', $sans-serif;
 
 $white: #fff;
 $black: #000;
@@ -9,7 +9,8 @@ $grey-light: #999;
 $grey-medium: #666;
 $grey-dark: #222;
 $slate-grey: lightslategray;
-$background: whitesmoke;
+$background: $white;
+$yellow: #f8f670;
 
 // $primary-color: yellow;
 $secondary-color: #B00000;
@@ -18,9 +19,6 @@ $tertiary-color: red;
 $blue: #3498db;
 $blue_dark: #34495e;
 $red: #e74c3c;
-$green: #2ecc71;
-$orange: #d35400;
-$yellow: #f39c12;
 
 /*********************
 TOOLS
@@ -39,7 +37,6 @@ TOOLS
 	padding: 4px 5px 2px;
 	color: $white;
 	border-radius: 3px;
-	// font-size: 0.5em;
 	text-decoration: none;
 	line-height: 1;
 	&:hover {

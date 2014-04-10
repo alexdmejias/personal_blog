@@ -57,15 +57,18 @@ p {
 }
 
 .title {
-	font-style: italic;
-	font-family: $serif;
+	// font-style: italic;
+	font-family: $special;
 	text-align: center;
+	font-weight: 300;
+	font-size: 2.4em;
 	@media screen and (min-width: 600px) {
 		text-align: left;
 	}
 }
 
-code {	background: $grey-light;
+code {
+	background: $grey-light;
 	color: $black;
 	padding: 0 6px;
 }
