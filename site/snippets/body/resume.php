@@ -1,7 +1,7 @@
 <section class="content wrap-narrow">
 	<h2 class="title"><?php echo html($page->title()) ?>
 		<span>
-			<a class="button fz-half italic" href="assets/alexmejias-resume.pdf">View As PDF</a>
+			<a class="button fz-half" href="assets/alexmejias-resume.pdf">View As PDF</a>
 		</span>
 	</h2>
 
