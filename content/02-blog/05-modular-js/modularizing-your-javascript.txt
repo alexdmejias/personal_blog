@@ -1,0 +1,33 @@
+Title: Modularizing Your Javascript
+----
+Date: April 8, 2014
+----
+Text:
+
+April 8, 2014.
+
+Over the past year I have been trying to modularize as many aspects of my projects as I can. Until recently I had been modularizing my PHP and my SCSS, but most of my JS applications were always just a series of files being concatenated by a Grunt task.
+
+Some time ago I used RequireJS in a Backbone application, the project was completed, but I never really saw the benefit of splitting my models, views and controllers aside from the fact that it was just easier to work with.
+
+Now that I have been working on a bigger Javascript application (side project) that does not follow an MVC pattern, I understand how important modularization in Javascript. The project right now it is broken into a handful of files:
+
+* __app__ - works as the main nerve center of the application
+* __events__ - handles the small amount of events in the application
+* __modal__ - handles the creation and usage of the modal
+* __helpers__ - houses several methods that the demos rely on
+* __demoX__ - a different module for each file
+* __colorSchemes__ - returns an array of colors, each one composed of an array of hex values
+
+The more I work in the project the more I realize how unmaintainable this is. I plan on wrapping up the project soon, but before I do that I hope to establish an architecture that I can easily pickup a few months/weeks down the line when I come up with another idea for a demo.
+
+I already have a few ideas of how I want to set this up.
+
+1. Better harness Javascripts prototypical inheritance to find and exploit the similarities in between the demos and make more agnostic methods in order to consolidate them.
+2. Use a Pub/Sub or Mediator pattern to decouple the application. This will provide me with a more sustainable solution. This seems like my weakest link, but it is hard to address without nailing down point #1.
+3. I may consolidate the helper file into the parent demo object from #1, as there is no real need for this once everything is in place.
+4. Once I have a good architecture to handle events, I can go ahead and tackle the module controls, resize, analytic and modal events.
+
+Right now I am using RequireJS since I already had some experience with it and there is a wealth of resources, but I am also considering switching to Browserify due to its more friendlier and universal syntax.
+
+Acomplishing the above list should pretty much wrap up the project, even though I have one or two more module Ideas.
