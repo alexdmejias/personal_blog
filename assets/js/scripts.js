@@ -19,7 +19,7 @@ $(document).on('scroll load', function () {
 });
 
 // lightbox initiation
-$('figure').on('click.magnific', 'img', function (e) {
+/*$('figure').on('click.magnific', 'img', function (e) {
     e.preventDefault();
 
     var imgParts = $(this).attr('src').split('-');
@@ -32,4 +32,4 @@ $('figure').on('click.magnific', 'img', function (e) {
         },
         type: 'image'
     });
-});
+});*/
