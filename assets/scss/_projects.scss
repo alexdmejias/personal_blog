@@ -15,10 +15,10 @@
 	}
 
 	.projects div {
-		width: 48%;
+		width: 50%;
+		box-sizing: border-box;
 		height: 230px;
-		position: relative;
-		margin-top: 5px;
+		border: 5px solid $white;
 		background-position: 50%;
 		background-size: cover;
 		a {
@@ -97,10 +97,8 @@
 		}
 
 		.projects div {
-			width: 32.333%;
-			margin: 15px .333%;
+			width: 33.333%;
 			height: 240px;
-			max-width: 250px;
 
 			a {
 				&:before {
@@ -127,7 +125,6 @@
 	@media screen and (min-width: 700px) {
 		.projects div {
 			height: 250px;
-			margin-bottom: 20px;
 		}
 	}
 
@@ -138,8 +135,7 @@
 	}
 	@media screen and (min-width: 1300px) {
 		.projects div {
-			height: 280px;
-			width: 23%;
+			width: 25%;
 		}
 	}
 }

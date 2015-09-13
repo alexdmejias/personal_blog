@@ -697,7 +697,8 @@ header {
 .wrap {
   width: 80%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  max-width: 1000px; }
 
 .wrap-narrow {
   width: 70%;
@@ -714,7 +715,7 @@ header {
   .wrap {
     width: 60%; }
   .wrap-narrow {
-    width: 40%; } }
+    width: 70%; } }
 
 .resume-body .personal_info {
   display: none; }
@@ -829,10 +830,12 @@ header {
   justify-content: space-between; }
 
 .home-body .projects div {
-  width: 48%;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 230px;
-  position: relative;
-  margin-top: 5px;
+  border: 5px solid #fff;
   background-position: 50%;
   -webkit-background-size: cover;
   background-size: cover; }
@@ -899,10 +902,8 @@ header {
     -ms-flex-pack: start;
     justify-content: flex-start; }
   .home-body .projects div {
-    width: 32.333%;
-    margin: 15px .333%;
-    height: 240px;
-    max-width: 250px; }
+    width: 33.333%;
+    height: 240px; }
     .home-body .projects div a {
       -webkit-transition: 0.5s all;
       transition: 0.5s all; }
@@ -920,8 +921,7 @@ header {
 
 @media screen and (min-width: 700px) {
   .home-body .projects div {
-    height: 250px;
-    margin-bottom: 20px; } }
+    height: 250px; } }
 
 @media screen and (min-width: 900px) {
   .home-body .projects div {
@@ -929,8 +929,7 @@ header {
 
 @media screen and (min-width: 1300px) {
   .home-body .projects div {
-    height: 280px;
-    width: 23%; } }
+    width: 25%; } }
 
 /* Magnific Popup CSS */
 .mfp-bg {
