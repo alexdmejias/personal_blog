@@ -48,7 +48,11 @@ At first, I thought about using my Particle Photon for it is small form factor a
 
 #### Electronics
 
-Outside the microcontroller there are only two main components, the LED ring and the button. All the necessary connectors, capacitors and resistors are connected on a prototyping board mounted on the arduino, making it a pseudo shield.
+Outside the microcontroller there are only two main components, the LED ring and the button. All the necessary connectors, capacitors and resistors are connected on a prototyping board mounted on the arduino, making it a pseudo shield. That hardest part of this was bending the leads of the connectors to match the non-standard pitch of connectos that the Arduino uses.Instead of soldering the cables for the button and the LED ring directly to the board, I decided to use regular connectors. The use of connectors should make the project easier to maintain and upgrade later on.
+
+A few things to note about the electronics in the project are that Adafruit recommends connecting a 1000uF capacitor across power and ground between the power source and the cables going out to the LED ring. A 1k resistor is also placed in front of the data line going to the LED ring as per Adafruits advise. 
+
+For the button, one thing to note is that because the button uses hardware interupts, a 104 capacitor is placed between the leads of the button. A 10k resistor should also be placed after the data cable, connecting data and ground.
 
 ##### Button
 
@@ -58,7 +62,7 @@ Because the button that I had seemed to have issues with the signals that it was
 
 The second major component of the project are the lights. Originally I thought about using the same LED that came with the button, but after some initial testing, I noticed that the button was hardly visible during the day, and so I removed the included LED. Next, I thought about connecting four LEDs and putting them through four holes that were already in the enclosure (not sure why). The LEDs would be controlled through a shift register in order to save the valuable PWM pins on the Arduino. After some more testing and hole drilling I decided that even with four LEDs the button would not be bright enough for daylight visibility. To mitigate the brightness issue, I thought about installing an additional four LEDs. Only after drilling another set of four holes did I realize that I would now have to manage 16 cables ((ground + vcc) * 8). After wrnaggling with this problem for two nights did I realize that I could use a recently purchased LED ring. The ring is compact enough to be placed between two layers of the buttons enclosure.
 
-The chosen solution for the lights situation is a LED ring. The ring has 24 individually controlled lights driven by W____ chips. The ring is chainable and compatible the NeoPixel library.
+The chosen solution for the lights situation is a LED ring. The ring has 24 individually controlled lights driven by WS2812 chips. The ring is chainable and compatible with the NeoPixel library.
 
 ##### Power
 
@@ -66,13 +70,13 @@ Because the Arduino Yun, does not have an internal power regulator, it is recomm
 
 #### Enclosure
 
-I thought about making a wooden box, I have access to wood working tools and materials. As much as I wanted to make a nice enclosure from scratch, I wanted to complete this project quickly and focus on the electronics part of it. The solution came in the form a small jelewry box from Michael. There are several different shapes and sizes all for around ~$5. Michaels also sells small pieces of wood incase you want to put something together yourself.
+I thought about making a wooden box, I have access to wood working tools and materials. As much as I wanted to make a nice enclosure from scratch, I wanted to complete this project quickly and focus on the electronics part of it. The solution came in the form a small jelewry box from Michael. There are several different shapes and sizes all for around ~$5. Michaels also sells small pieces of wood incase you want to put something together yourself. The boxes are unfinished in case you would want to paint it.
 
-For the project, I had to make three modifications to the enclosure. First, I had to drill a hole in the center for the top cover in order to mount the button. Second, I had to glue the platform where the tactile button would be sitting, which was made from scraps of wood I had laying around. The last modification was the hole for the USB cable to go through.
+For the project, I had to make three modifications to the enclosure. First, I had to drill a hole in the center for the top cover in order to mount the button. Second, I had to glue the platform where the tactile button would be sitting, which was made from scraps of wood I had laying around. The last modification was the hole in the back side of the box for the USB cable to go through.
 
 #### Code
 
-###Possible upgrades
+### Possible upgrades
 
 There are quite a few things that can be improved or added here, here is a short list.
 
