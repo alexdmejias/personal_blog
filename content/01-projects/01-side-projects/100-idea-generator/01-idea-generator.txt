@@ -4,7 +4,7 @@ Template: project
 ----
 Thumbnail: /thumbnails/idea-generator.jpg
 ----
-Url: http://labs.alexdmejias.com/idea-gen/
+Url: http://amejias101.github.io/idea-gen/
 ----
 Github: https://github.com/amejias101/idea-gen
 ----

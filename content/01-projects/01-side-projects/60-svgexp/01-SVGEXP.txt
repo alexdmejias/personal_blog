@@ -4,15 +4,13 @@ Template: project
 ----
 Thumbnail: /thumbnails/svganimation.png
 ----
-Url: http://labs.alexdmejias.com/svgexp/
+Url: http://amejias101.github.io/SVGEXP/
 ----
 Github: https://github.com/amejias101/svgexp
 ----
 Excerpt: Series of SVG Experiments
 ----
 Text:
-
-Under Heavy Development!
 
 An ongoing series of small experiments revolving around the capabilities of SVG on the web and how it could be harnessed for something other than just images. You can view a simple set of goals in the projects (link: https://github.com/amejias101/SVGEXP/blob/master/README.md text: Readme file).
 

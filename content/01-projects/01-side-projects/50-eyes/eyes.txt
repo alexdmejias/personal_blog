@@ -1,0 +1,16 @@
+Title: Eyes
+----
+Template: project
+----
+Thumbnail: /thumbnails/cdnatives.jpg
+----
+Url: http://amejias101.github.io/eyes/
+----
+Github: https://github.com/amejias101/eyes
+----
+Excerpt: Simple experiment using vectors
+----
+Text:
+(resimage: cdnatives/overview.jpg)
+
+Simple experiment used to solidify my understanding of vectors. Inspired by one of the exercises in Nature of Code. The experiment relies on my fork of the P5 vector library, which is the closest representation to the PVector library for Processing.

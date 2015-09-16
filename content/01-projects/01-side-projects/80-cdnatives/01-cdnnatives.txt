@@ -1,0 +1,20 @@
+Title: CDNatives
+----
+Template: project
+----
+Thumbnail: /thumbnails/cdnatives.jpg
+----
+Url: http://amejias101.github.io/cdnatives/
+----
+Github: https://github.com/amejias101/cdnatives
+----
+Excerpt: JS CDNs Directory
+----
+Text:
+(resimage: cdnatives/overview.jpg)
+
+Born as an alternative to having to google "jquery google CDN" every time I wanted to start a prototype, a desire to start an angular side project and not knowing about (link: http://cdnjs.com/ text: cdnjs.com), I created CDNatives.
+
+The project allows people to quickly get the url to a CDN hosted version of the library they need. Through a very simple set of controls, the user can toggle between development and production ready versions, and whether they would like to include 'script' tags. After clicking the corresponding button, all the user has to do is press cmd + c (ctrl + c in windows) to add the CDNs url to their clipboard.
+
+The application uses a simple JSON file to get all of its data if a user ever wants to add another url or library all they have to do is submit a pull request.

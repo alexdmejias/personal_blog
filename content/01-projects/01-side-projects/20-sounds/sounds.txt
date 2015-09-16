@@ -1,0 +1,17 @@
+Title: Sounds
+----
+Template: project
+----
+Thumbnail: /thumbnails/idea-generator.jpg
+----
+Url: https://amejias101.github.io/Nature-of-Code-Canvas/
+----
+Github: https://github.com/amejias101/Nature-of-Code-Canvas
+----
+Excerpt: Simple Idea Generator
+----
+Text:
+
+
+
+(resimage: idea-generator/overview.png)

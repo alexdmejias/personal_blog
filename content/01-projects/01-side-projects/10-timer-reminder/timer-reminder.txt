@@ -1,0 +1,86 @@
+Title: Timer Reminder
+----
+Template: project
+----
+Thumbnail: /thumbnails/cdnatives.jpg
+----
+Github: https://github.com/amejias101/timer-reminder
+----
+Excerpt: Physical Time Tracking Button
+----
+Text:
+(resimage: cdnatives/overview.jpg)
+
+###Problem
+
+As someone who works for a design agency I am required to track my hours. Tracking hours is not that difficult as there are many services that can do this quite well, the issue that I have is that I forget to actually start and stop tracking my hours. I have tried installing a few applications to remind me to do so every so often, but it is fairly easy to ignore alarms when you are knee deep into a task.
+
+###Solution
+
+I have thought of different solutions for this problem. I thought about using software to automate the dat arecording processing, but just like other timers that I had used in the past, I would probably forget about them. I thought about using a device like the Digi Spark, essentially an ATTiny85 in a usb pluggable form factor with some LEDs mounted on top of it, could of been a good solution, I suppose.__(Should probably refute this somehow)__. None of the solutions that I had really felt like something that could constantly remind me and could also be omni-present, they both depended on the status of my computer. Then I thought about a button that could just be pressed and record times in which it was pressed, I would then have to get the data out somehow and make some sense of it, but I did like the button concept. What if the button could be exapnded into something more autonomous?
+
+The final solution that I came up with is a physical button that sits on your desk (next to your monitor preferably). The giant button acts as both an indicator and a reminder to actually track your time. The concept is fairly simple and should be fairly easy to expand on this idea without interfering with the main objective.
+
+The button has two states, active and inactive. If the button goes from an inactive to active state, the button will internally store the time in which the button was pressed. Additionally the button will light up. When the button goes from an active to inactive state, the lights will turn off and the button will log the time in which the state changed, it will then record the previous start time and the end time in a Google Spreadsheet (through the use of Temboo). The user should then be able to log in to easily annotate the client and/or project for which they worked in the stored time spans. When the button is in the inactive state and the current time is still within the users previously defined working hours, the button will periodically remind the user to activate the button (by pressing it) in order to track the users time. The button will remind the user by flashing random light patterns and by playing different sounds.
+
+###Supplies
+
+The final iteration of the project uses
+
+- 1 x Arduino Yun
+- 1 x 24 LED ring, compatible with the NeoPixel Library
+- 1 x Enclosure
+- 1 x Giant arcade button
+- 1 x Prototyping board
+- 1 x 1000uF capacitor
+- 1 x 104 capacitor
+- 1 x 10k resistor
+- 1 x 1k resistor
+- Glue
+- Bunch of wires
+- Male and Femare wire connectors
+- Soldering equipment
+
+###Process
+
+#### Microtronller
+At first, I thought about using my Particle Photon for it is small form factor and because I had not been able to use since I bought and wanted to see what it could do. After some research into the project, I stumbled upon Temboo, a great service that allows people (and companies) to more easily interface with 3rd party APIs. Aside from the fact that Temboo had the exact integrations with Google Spreadsheets that I needed, it also gives the user the ability to quickly copy and paste the necessary code for the Arduino Yun. To speed up this project up, I ended up switching the Photon for the Yun. In this project I wanted to really focus on the electronics side of things so the ability to not focus on the code was really nice and significantly sped up the project timeline. I could have written a middle man application that handled the Oauth handshake and the Google Drive API handling, but the ability to have the data insertion part of the application be done in about 20 minutes made this project really enjoyable.
+
+#### Electronics
+
+Outside the microcontroller there are only two main components, the LED ring and the button. All the necessary connectors, capacitors and resistors are connected on a prototyping board mounted on the arduino, making it a pseudo shield.
+
+##### Button
+
+Because the button that I had seemed to have issues with the signals that it was sending, I removed all of the buttons electronic components. In order to make the button work without any of its electronic components, I placed a small tactile button that under the one of the buttons piece that would of processed the original button.
+
+##### Lights
+
+The second major component of the project are the lights. Originally I thought about using the same LED that came with the button, but after some initial testing, I noticed that the button was hardly visible during the day, and so I removed the included LED. Next, I thought about connecting four LEDs and putting them through four holes that were already in the enclosure (not sure why). The LEDs would be controlled through a shift register in order to save the valuable PWM pins on the Arduino. After some more testing and hole drilling I decided that even with four LEDs the button would not be bright enough for daylight visibility. To mitigate the brightness issue, I thought about installing an additional four LEDs. Only after drilling another set of four holes did I realize that I would now have to manage 16 cables ((ground + vcc) * 8). After wrnaggling with this problem for two nights did I realize that I could use a recently purchased LED ring. The ring is compact enough to be placed between two layers of the buttons enclosure.
+
+The chosen solution for the lights situation is a LED ring. The ring has 24 individually controlled lights driven by W____ chips. The ring is chainable and compatible the NeoPixel library.
+
+##### Power
+
+Because the Arduino Yun, does not have an internal power regulator, it is recommended that you power the the arduino through the micro USB cable. Although a power regular could have been added to enable other power sources and make the project more versatile, I have  stuck with the recommended way and have used the micro USB. Using the Micro USB should still allow me to power the device through USB adapters and external cellphone batteries.
+
+#### Enclosure
+
+I thought about making a wooden box, I have access to wood working tools and materials. As much as I wanted to make a nice enclosure from scratch, I wanted to complete this project quickly and focus on the electronics part of it. The solution came in the form a small jelewry box from Michael. There are several different shapes and sizes all for around ~$5. Michaels also sells small pieces of wood incase you want to put something together yourself.
+
+For the project, I had to make three modifications to the enclosure. First, I had to drill a hole in the center for the top cover in order to mount the button. Second, I had to glue the platform where the tactile button would be sitting, which was made from scraps of wood I had laying around. The last modification was the hole for the USB cable to go through.
+
+#### Code
+
+###Possible upgrades
+
+There are quite a few things that can be improved or added here, here is a short list.
+
+- Screen indicating how much time has passed.
+- Authentication: Once the timer is started or stopped a confirmation message can be sent to the users phone asking for approval
+- Notifications for when the timer is started or stopped
+- Notifications alerting the user of unlabeled time slots
+- Blink the active lights in accordance of the Pomodoro technique
+- On/Off Switch
+- Improve the button pressing mechanism
+- Add another smaller light ring inside the larger one
