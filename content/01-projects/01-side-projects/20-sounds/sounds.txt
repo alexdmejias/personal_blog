@@ -2,16 +2,12 @@ Title: Sounds
 ----
 Template: project
 ----
-Thumbnail: /thumbnails/idea-generator.jpg
+Thumbnail: /thumbnails/sounds.jpg
 ----
-Url: https://amejias101.github.io/Nature-of-Code-Canvas/
+Github: https://github.com/amejias101/sounds
 ----
-Github: https://github.com/amejias101/Nature-of-Code-Canvas
-----
-Excerpt: Simple Idea Generator
+Excerpt: Ambient Noise Player
 ----
 Text:
 
-
-
-(resimage: idea-generator/overview.png)
+Coming Soon

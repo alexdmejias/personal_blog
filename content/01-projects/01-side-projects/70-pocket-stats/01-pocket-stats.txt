@@ -4,8 +4,6 @@ Template: project
 ----
 Thumbnail: /thumbnails/pocket-stats.jpg
 ----
-Url: http://pocket.alexdmejias.com/
-----
 Github: https://github.com/amejias101/pocket-analytics
 ----
 Excerpt: Keeping Track of My Pocket Queue

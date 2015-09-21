@@ -2,17 +2,15 @@ Title: Timer Reminder
 ----
 Template: project
 ----
-Thumbnail: /thumbnails/cdnatives.jpg
+Thumbnail: /thumbnails/timer-reminder.jpg
 ----
 Github: https://github.com/amejias101/timer-reminder
 ----
 Excerpt: Physical Time Tracking Button
 ----
 Text:
-(resimage: cdnatives/overview.jpg)
 
-TODO: photo of finished project
-TODO: photo of inside the project
+(resimage: timer-reminder/on.jpg)
 
 ###Problem
 
@@ -51,7 +49,7 @@ At first, I thought about using my Particle Photon for it is small form factor a
 
 #### Electronics
 
-TODO: photo of protoboard
+(resimage: timer-reminder/proto-board.jpg)
 
 Outside the microcontroller there are only two main components, the LED ring and the button. All the necessary connectors, capacitors and resistors are connected on a prototyping board mounted on the Arduino, making it a pseudo shield. That hardest part of this was bending the leads of the connectors to match the non-standard pitch of connector that the Arduino uses. Instead of soldering the cables for the button and the LED ring directly to the board, I decided to use regular connectors. The use of connectors should make the project easier to maintain and upgrade later on.
 
@@ -61,25 +59,19 @@ For the button, one thing to note is that because the button uses hardware inter
 
 ##### Button
 
-TODO: photo unasambled button
-TODO: photo asambled button
+(resimage: timer-reminder/button-open.jpg)
 
 Because the button that I had seemed to have issues with the signals that it was sending, I removed all of the buttons electronic components. In order to make the button work without any of its electronic components, I placed a small tactile button that under the one of the buttons piece that would have processed the original button.
 
-TODO: photo of tactile button
+(resimage: timer-reminder/tactile-button.jpg)
 
 ##### Lights
 
-TODO photo of button powered up
-
 The second major component of the project are the lights. Originally I thought about using the same LED that came with the button, but after some initial testing, I noticed that the button was hardly visible during the day, and so I removed the included LED. Next, I thought about connecting four LEDs and putting them through four holes that were already in the enclosure (not sure why). The LEDs would be controlled through a shift register in order to save the valuable PWM pins on the Arduino. After some more testing and hole drilling, I decided that even with four LEDs the button would not be bright enough for daylight visibility. To mitigate the brightness issue, I thought about installing an additional four LEDs. Only after drilling another set of four holes did I realize that I would now have to manage 16 cables ((ground + vcc) * 8). Only after stepping back for a while, did I realize that I could use a recently purchased LED ring. 
 
-TODO photo of multiple lights
-TODO photo of holes
+(resimage: timer-reminder/holes.jpg)
 
 The chosen ring is compact enough to be placed between the light diffuser and the part of the button that will press the tactile button. The ring has 24 individually controlled SMD RGB LEDs driven by WS2812 chips. The ring is chainable and compatible with the NeoPixel library and will only require a total of three cables. It is recommended to also a capacitor between ground and vcc and a resistor to the data line.
-
-TODO photo of light ring
 
 ##### Power
 
@@ -93,8 +85,8 @@ For the project, I had to make three modifications to the enclosure. First, I ha
 
 The code is farily simple. When the button is pressed an interrupt signal is sent, which changes the state of the application. If the application is active, the lights will be turned on. If the state is inactive, the lights will light up periodically in different patterns in order to remind the user to activate the button. When the button is first activated the start time is recorded, once the button is pressed again, the end time will be recorded and a request will be sent to Temboo to log the time into the spreadsheet.
 
-TODO gif of breathing pattern
-TODO gif of rotating lights pattern
+(link: https://youtu.be/rp0n5qz-dMU text: Breathing Pattern)
+(link: https://youtu.be/ZX8ICTGhWok text: Rotating Lights Pattern)
 
 ### Possible upgrades
 
