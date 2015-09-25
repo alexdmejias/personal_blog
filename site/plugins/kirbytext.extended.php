@@ -19,8 +19,7 @@ class kirbytextExtended extends kirbytext {
 		$sizes = [
 			['small' , ''],
 			['medium', 400],
-			['large', 800],
-			['xlarge', 1200]
+			['large', 800]
 		];
 
 		$image = $params['resimage'];
@@ -49,7 +48,6 @@ class kirbytextExtended extends kirbytext {
 					'<span data-src="'.$image_parts[0]. $sized_dir .$image_name_parts[0].'-small.'.$image_name_parts[1].'"></span>'.
 					'<span data-src="'.$image_parts[0]. $sized_dir .$image_name_parts[0].'-medium.'.$image_name_parts[1].'" data-media="(min-width: 400px)"></span>'.
 					'<span data-src="'.$image_parts[0]. $sized_dir .$image_name_parts[0].'-large.'.$image_name_parts[1].'" data-media="(min-width: 800px)"></span>'.
-					'<span data-src="'.$image_parts[0]. $sized_dir .$image_name_parts[0].'-xlarge.'.$image_name_parts[1].'" data-media="(min-width: 1200px)"></span>'.
 					'</span>'.
 					(!empty($options['alt']) ? '<figcaption><span>'.$options['alt'].'</span></figcaption>' : '') .
 					'</figure>';

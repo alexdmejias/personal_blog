@@ -34,6 +34,7 @@ module.exports = function (grunt) {
 
 		responsive_images: {
 			dist: {
+			  upscale: false,
 				options: {
 					sizes: [{
 						name: 'small',
@@ -44,12 +45,10 @@ module.exports = function (grunt) {
 					}, {
 						name: 'large',
 						width: 800,
-					}, {
-						name: 'xlarge',
-						width: 1200
 					}]
 				},
 				files: [{
+				  upscale: false,
 					expand: true,
 					cwd: '<%= paths.contentImages %>/compressed/',
 					src: '**/*.{jpg,png}',
