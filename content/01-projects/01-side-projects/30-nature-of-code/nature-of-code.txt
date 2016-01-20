@@ -1,0 +1,15 @@
+Title: NoC in Canvas
+----
+Template: project
+----
+Thumbnail: /thumbnails/nature-of-code.png
+----
+Url: https://amejias101.github.io/Nature-of-Code-Canvas/
+----
+Github: https://github.com/amejias101/Nature-of-Code-Canvas/
+----
+Excerpt: Nature of Code Implemented with Canvas
+----
+Text:
+
+Coming Soon

@@ -1,0 +1,15 @@
+Title: Markd
+----
+Template: project
+----
+Thumbnail: /thumbnails/markd.jpg
+----
+Url: http://markd.meteor.com
+----
+Github: https://github.com/amejias101/markd
+----
+Excerpt: Note Taking Application
+----
+Text:
+
+Coming Soon

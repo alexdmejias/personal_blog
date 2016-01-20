@@ -1,8 +1,0 @@
-Title: Using Wordpress and Composer
-----
-Text: Great article by Mat Gargano on using Wordpress and Composer. (link:http://matgargano.com/modern-wordpress-development-composer/ text:Link)
-----
-Tags: Wordpress, WP, tip, link
-----
-Template: tip
-

@@ -17,19 +17,19 @@ h2, .h2 {
 
 h3, .h3 {
 	// font-size: 1.125em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 700;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
+	font-size: 1.2em;
 }
 
 h5, .h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 a, a:visited {
@@ -71,4 +71,8 @@ code {
 	background: $grey-light;
 	color: $black;
 	padding: 0 6px;
+}
+
+ul li {
+	font-size: 1.1em;
 }

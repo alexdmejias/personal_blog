@@ -34,6 +34,7 @@ module.exports = function (grunt) {
 
 		responsive_images: {
 			dist: {
+			  upscale: false,
 				options: {
 					sizes: [{
 						name: 'small',
@@ -44,12 +45,10 @@ module.exports = function (grunt) {
 					}, {
 						name: 'large',
 						width: 800,
-					}, {
-						name: 'xlarge',
-						width: 1200
 					}]
 				},
 				files: [{
+				  upscale: false,
 					expand: true,
 					cwd: '<%= paths.contentImages %>/compressed/',
 					src: '**/*.{jpg,png}',
@@ -134,7 +133,7 @@ module.exports = function (grunt) {
 			prod: {
 				options: {
 					exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json',
-							'.DS_Store', 'README.md', 'server_creds.json', 'content/01-projects/*', '!content/01-projects/projects.txt'],
+							'.DS_Store', 'README.md', 'server_creds.json', 'content'],
 					dest: '<%= creds.path.prod %>',
 					host: '<%= creds.user %>@<%= creds.ip %>'
 				}
@@ -214,8 +213,9 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('images', ['imagemin', 'responsive_images']);
 	grunt.registerTask('build', ['sass:prod', 'autoprefixer:prod', 'file_append', 'concat', 'uglify', 'responsive_images']);
-	grunt.registerTask('deploy', ['build', 'rsync:staging']);
+	grunt.registerTask('deploy_dev', ['build', 'rsync:staging']);
 	grunt.registerTask('deploy_prod', ['build', 'aws_s3', 'rsync:prod']);
+	grunt.registerTask('deploy', ['deploy_dev', 'deploy_prod']);
 	grunt.registerTask('content', ['rsync:staging_content', 'rsync:prod_content']);
 	grunt.registerTask('default', ['watch']);
 };

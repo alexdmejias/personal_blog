@@ -4,7 +4,7 @@ Template: project
 ----
 Thumbnail: /thumbnails/animted-elections.jpg
 ----
-Url: http://labs.alexdmejias.com/animated-elections/
+Url: http://amejias101.github.io/animated-elections
 ----
 Github: https://github.com/amejias101/animated-elections
 ----

@@ -3,7 +3,7 @@
 	$env_vars = [
 		[
 			'name' => 'local',
-			'address' => 'blog.dev',
+			'address' => '192.168.33.10',
 			'js_type' => '.concat',
 			'css_type' => '',
 			'assets_url' => '/assets'

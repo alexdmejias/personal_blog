@@ -10,17 +10,18 @@
   "author": "",
   "license": "BSD",
   "devDependencies": {
-    "grunt-rsync": "~0.2.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "matchdep": "~0.3.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.6.5",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-sass": "^0.11.0",
-    "grunt-responsive-images": "^0.1.1",
-    "grunt-contrib-uglify": "^0.3.3",
-    "grunt-contrib-imagemin": "^0.4.1",
     "grunt-aws-s3": "^0.8.1",
-    "grunt-file-append": "0.0.2"
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-imagemin": "^0.4.1",
+    "grunt-contrib-uglify": "^0.3.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-file-append": "0.0.2",
+    "grunt-responsive-images": "^0.1.6",
+    "grunt-rsync": "~0.2.1",
+    "grunt-sass": "^1.0.0",
+    "matchdep": "~0.3.0",
+    "node-sass": "^3.3.2"
   }
 }

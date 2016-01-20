@@ -9,7 +9,7 @@
 		<div class="personal_info clearfix">
 			<h3>Alex Mejias</h3>
 			<h4>
-				alex@alexdmejias.com<br>
+				alexdmejias@gmail.com<br>
 				(516) 748 - 6801
 			</h4>
 			<h4>

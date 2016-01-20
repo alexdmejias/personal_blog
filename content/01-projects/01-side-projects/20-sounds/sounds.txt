@@ -1,0 +1,13 @@
+Title: Sounds
+----
+Template: project
+----
+Thumbnail: /thumbnails/sounds.jpg
+----
+Github: https://github.com/amejias101/sounds
+----
+Excerpt: Ambient Noise Player
+----
+Text:
+
+Coming Soon

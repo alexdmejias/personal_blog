@@ -1,9 +1,0 @@
-Title: Custom Config Files in Laravel
-----
-Text: To have custom config files in laravel all you have to do is create your config file in the `config` directory. This file will be loaded automatically. The file should contain syntax. To access any property all you would have to do is `Config::get('filename.array_key.array_value')`.
-
-I should also note that custom config files also work in different enviroments.
-----
-Tags: Laravel, L4, tip
-----
-Template: tip

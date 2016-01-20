@@ -6,17 +6,49 @@ Text:
 
 <div class="row" markdown="1">
 
-### Experience
+###  
 
 <div class="experience content" markdown="1">
 
 <div markdown="1">
 
+#### Summary
+#### 
+
+I am an experienced software engineer focused on development and establishing growth within development teams.
+At DBOX, I am working on building modular and client agnostic tools as well as expanding our team documentation. I also take interest in physical computing, using technologies such as Johnny-Five and Arduino.
+
+</div>
+
+<div markdown="1">
+
+#### DBOX
+#### Aug. '14 - Present
+#### Full-Stack Developer
+
+Responsible for building new services in a full stack JavaScript environment that are key to the expansion of digital offerings, internal tools and experimental developments. Assisted with the expansion of internal teams by creating through documentation, establishing platforms and mentoring junior developers.
+
+</div>
+
+<div markdown="1">
+
+#### Barrel
+#### May '14 - Aug. '14
+#### Contract Full-Stack Developer
+
+Contributed to the ongoing effort of modularization within new and inherited projects. Improved functionality and documentation of internal Wordpress framework. Consistently mentored junior developer on best practices. Assisted with the implementation of Node as an application environment. Created and finalized projects for Shake Law and SAY:Camp.
+
+</div>
+
+<div markdown="1">
+
 #### Group SJR
-#### March. '13 - Feb. '14
+#### Mar. '13 - Feb. '14
 #### Web Developer
 
-Worked on the development and maintenance of websites for Levis Strauss, KKR, Target, NCTA and others. Set forth changes for better build processes and development servers. Led efforts on project modularization. Some of the technologies I used were Wordpress, Sass, Grunt, jQuery, EC2, and PHP.
+Built and maintained best-in-class branded content websites for Barneys New York, Credit Suisse, GE, KKR, Levi Strauss & Co, NCTA, Target, Xerox, and others. Developed better build processes and improved development server configuration and management. Led efforts on project modularization to improve developer productivity. Collaborated heavily with internal and external teams on design and development efforts.
+
+Some of the technologies I used were Wordpress, Sass, Grunt, jQuery, EC2, and PHP.
 
 </div>
 
@@ -33,33 +65,11 @@ Primarily worked maintaining a news and reviews website, implementing new featur
 
 <div markdown="1">
 
-#### (UN) Common Visions
-#### March '12 - May '12
-#### Assistant Organizer
-
-Coordinated between professors and graphic design students to participate in the first exhibition in which the students of the Arts MFA program presented their work along side graduating graphic design majors.
-
-
-</div>
-
-<div markdown="1">
-
 #### OPT Central
 #### March '12 - May '12
 #### Junior Web Developer
 
 Worked along side the Senior front-end developer and the in house Graphic Designer creating websites for brands from the ground up. Implemented various interactive features through the use of the latest techniques, including CSS3, HTML5, and jQuery.
-
-
-</div>
-
-<div markdown="1">
-
-#### Control Electropolishing Corp.
-#### Jul. '11 - Sept. '11
-#### Freelance Web Designer & Developer
-
-Solely developed the entire website based on the inputs of the client. After various revisions the website was completed and the customer was extremely satisfied with the finished product.
 
 
 </div>
